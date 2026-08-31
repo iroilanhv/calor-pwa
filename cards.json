@@ -1,11 +1,331 @@
 [
   {
+    "id": "L1P001",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 9,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve encostar a palma da mão na palma de B por 15 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P002",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 10,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem ficar joelho com joelho por 20 segundos, mantendo contato visual."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P003",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 11,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve tocar o antebraço de B enquanto faz um elogio sincero."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P004",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 12,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve ficar ombro a ombro com B até o fim da rodada."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P005",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 13,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve dar um abraço de 10 segundos em B."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P006",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 14,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem ficar frente a frente, a um passo de distância, por 15 segundos sem falar."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P007",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 15,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve segurar a mão de B por 20 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P008",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 16,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve se aproximar de B o suficiente para falar baixo e dizer o que mais chamou sua atenção nele."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P009",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 17,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve apoiar uma mão no ombro de B durante 15 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1P010",
+    "category": "proximity",
+    "level": 1,
+    "intensity": 18,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem trocar de lugar sentando-se lado a lado e permanecer assim até a próxima carta."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_1",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
     "id": "L1F001",
     "category": "flirt",
     "level": 1,
-    "intensity": 8,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
+    "intensity": 9,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -16,8 +336,6 @@
       "ptBR": "A deve olhar para B por 8 segundos e fazer um elogio sincero."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -28,7 +346,8 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -37,20 +356,18 @@
     "category": "flirt",
     "level": 1,
     "intensity": 10,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B qual foi a primeira característica que chamou sua atenção."
+      "ptBR": "A deve dizer a B qual detalhe do jeito dele mais chamou sua atenção."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -61,7 +378,8 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -69,21 +387,19 @@
     "id": "L1F003",
     "category": "flirt",
     "level": 1,
-    "intensity": 12,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
+    "intensity": 11,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve contar a B qual foi sua primeira impressão dele."
+      "ptBR": "A deve dizer a B qual foi sua primeira impressão dele."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -94,7 +410,8 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -102,21 +419,19 @@
     "id": "L1F004",
     "category": "flirt",
     "level": 1,
-    "intensity": 14,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
+    "intensity": 12,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve sustentar o olhar de B por 10 segundos sem falar."
+      "ptBR": "A deve completar olhando para B: “uma coisa em você que chama atenção é...”"
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -127,7 +442,8 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -135,9 +451,9 @@
     "id": "L1F005",
     "category": "flirt",
     "level": 1,
-    "intensity": 16,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
+    "intensity": 13,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -145,11 +461,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B qual detalhe do jeito dele considera mais charmoso."
+      "ptBR": "A deve dizer a B qual roupa, acessório ou detalhe visual dele acha mais bonito."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -160,7 +474,8 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -168,21 +483,19 @@
     "id": "L1F006",
     "category": "flirt",
     "level": 1,
-    "intensity": 18,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
+    "intensity": 14,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve completar: “uma coisa em você que chama atenção é...” olhando para B."
+      "ptBR": "A deve fazer a B uma provocação leve e terminar com um elogio."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -193,73 +506,8 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1F007",
-    "category": "flirt",
-    "level": 1,
-    "intensity": 20,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B que tipo de energia ele transmite naquela noite."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1F008",
-    "category": "flirt",
-    "level": 1,
-    "intensity": 22,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve fazer B sorrir usando apenas uma frase de flerte leve."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -267,9 +515,9 @@
     "id": "L1C001",
     "category": "confession",
     "level": 1,
-    "intensity": 10,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
+    "intensity": 11,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -277,11 +525,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve contar a B qual qualidade mais facilmente desperta sua atração."
+      "ptBR": "A deve contar a B uma situação em que já ficou sem graça por causa de atração."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -292,7 +538,8 @@
       "directed",
       "confession",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -301,20 +548,18 @@
     "category": "confession",
     "level": 1,
     "intensity": 12,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B se prefere conquistar ou ser conquistado."
+      "ptBR": "A deve dizer a B qual tipo de atitude costuma despertar sua curiosidade."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -325,7 +570,8 @@
       "directed",
       "confession",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -333,21 +579,19 @@
     "id": "L1C003",
     "category": "confession",
     "level": 1,
-    "intensity": 14,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
+    "intensity": 13,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve contar a B uma situação em que ficou nervoso por causa de atração."
+      "ptBR": "A deve dizer a B o que faz um flerte funcionar com ele."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -358,7 +602,8 @@
       "directed",
       "confession",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -366,186 +611,19 @@
     "id": "L1C004",
     "category": "confession",
     "level": 1,
-    "intensity": 16,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual elogio costuma funcionar melhor com ele."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C005",
-    "category": "confession",
-    "level": 1,
-    "intensity": 18,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B qual tipo de encontro considera mais envolvente."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C006",
-    "category": "confession",
-    "level": 1,
-    "intensity": 20,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B o que mais valoriza quando surge química com alguém."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C007",
-    "category": "confession",
-    "level": 1,
-    "intensity": 22,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B uma coisa que gostaria que alguém percebesse sem perguntar."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C008",
-    "category": "confession",
-    "level": 1,
-    "intensity": 24,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual característica de personalidade considera mais sedutora."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1P001",
-    "category": "proximity",
-    "level": 1,
     "intensity": 14,
-    "temperatureDelta": 3,
-    "tensionDelta": 5,
-    "durationSeconds": 25,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem ficar frente a frente por 10 segundos mantendo contato visual."
+      "ptBR": "A deve contar a B uma coisa sobre si que normalmente demora a revelar."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -554,31 +632,30 @@
     },
     "tags": [
       "directed",
-      "proximity",
+      "confession",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1P002",
-    "category": "proximity",
+    "id": "L1C001",
+    "category": "chaos",
     "level": 1,
-    "intensity": 16,
-    "temperatureDelta": 3,
-    "tensionDelta": 5,
-    "durationSeconds": 25,
+    "intensity": 13,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve sentar-se ao lado de B até o fim da rodada."
+      "ptBR": "A e B devem trocar um elogio cada um, sem repetir algo já dito nesta partida."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -587,97 +664,30 @@
     },
     "tags": [
       "directed",
-      "proximity",
+      "chaos",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1P003",
-    "category": "proximity",
-    "level": 1,
-    "intensity": 18,
-    "temperatureDelta": 3,
-    "tensionDelta": 5,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve se aproximar de B e dizer em voz baixa uma coisa que gostaria de descobrir sobre ele."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1P004",
-    "category": "proximity",
-    "level": 1,
-    "intensity": 20,
-    "temperatureDelta": 3,
-    "tensionDelta": 5,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve perguntar a B se pode segurar sua mão por 10 segundos; só façam se ambos quiserem."
-    },
-    "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1X001",
+    "id": "L1C002",
     "category": "chaos",
     "level": 1,
     "intensity": 14,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B qual foi a surpresa mais positiva da noite até agora."
+      "ptBR": "A deve fazer uma pergunta de química a B; B pode responder ou devolver a mesma pergunta."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -688,29 +698,60 @@
       "directed",
       "chaos",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1X002",
+    "id": "L1C003",
+    "category": "chaos",
+    "level": 1,
+    "intensity": 15,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem manter contato visual enquanto o grupo conta lentamente até 10."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "chaos",
+      "level_1",
+      "consent_forward",
+      "social"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L1C004",
     "category": "chaos",
     "level": 1,
     "intensity": 16,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B qual interação do grupo mais chamou sua atenção até agora."
+      "ptBR": "A deve dizer a B qual interação entre os dois gostaria de repetir mais tarde, se ambos quiserem."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -721,17 +762,18 @@
       "directed",
       "chaos",
       "level_1",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1X003",
-    "category": "chaos",
-    "level": 1,
-    "intensity": 18,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
+    "id": "L2P001",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 25,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -739,11 +781,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve escolher entre fazer um elogio ou responder uma pergunta pessoal feita por B."
+      "ptBR": "Com consentimento de B, A deve abraçá-lo por 15 segundos e permanecer próximo depois."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -752,31 +792,30 @@
     },
     "tags": [
       "directed",
-      "chaos",
-      "level_1",
-      "consent_forward"
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1X004",
-    "category": "chaos",
-    "level": 1,
-    "intensity": 20,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
+    "id": "L2P002",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 26,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve contar a B uma coisa inesperada sobre seu jeito de flertar."
+      "ptBR": "Com consentimento de B, A deve segurar as duas mãos de B por 20 segundos."
     },
     "requirements": {
-      "minTemperature": 0,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -785,9 +824,394 @@
     },
     "tags": [
       "directed",
-      "chaos",
-      "level_1",
-      "consent_forward"
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2P003",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 27,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem ficar frente a frente a poucos centímetros de distância por 15 segundos; qualquer aproximação adicional exige vontade mútua."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2P004",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 28,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve tocar suavemente o rosto de B por alguns segundos e depois fazer um elogio."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2P005",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 29,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve apoiar a mão na cintura de B durante 15 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2P006",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 30,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve sentar-se bem próximo de B e permanecer assim até a próxima rodada."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2P007",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 31,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve fazer uma massagem breve nos ombros de B por 20 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2P008",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 32,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem ficar de pé frente a frente e aproximar-se até uma distância confortável para ambos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2P009",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 33,
+    "temperatureDelta": 1,
+    "tensionDelta": 2,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve passar o braço pelos ombros de B e permanecer assim por 20 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2P010",
+    "category": "proximity",
+    "level": 2,
+    "intensity": 34,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve dizer algo provocante a B enquanto permanece próximo dele por 15 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2K001",
+    "category": "kiss",
+    "level": 2,
+    "intensity": 29,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se ele aceita um beijo no rosto. Se ambos quiserem, A realiza o beijo."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2K002",
+    "category": "kiss",
+    "level": 2,
+    "intensity": 30,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se gostaria de um beijo breve. Se ambos disserem sim, podem trocar o beijo."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2K003",
+    "category": "kiss",
+    "level": 2,
+    "intensity": 31,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem aproximar os rostos por alguns segundos. Se ambos quiserem um beijo, podem fazê-lo; caso contrário, apenas mantenham o olhar."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_2",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2K004",
+    "category": "kiss",
+    "level": 2,
+    "intensity": 32,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se prefere um abraço demorado ou um beijo breve e realizar apenas a opção aceita por ambos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_2",
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -795,9 +1219,9 @@
     "id": "L2F001",
     "category": "flirt",
     "level": 2,
-    "intensity": 22,
-    "temperatureDelta": 3,
-    "tensionDelta": 6,
+    "intensity": 25,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -805,11 +1229,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B qual detalhe da aparência dele mais chamou sua atenção."
+      "ptBR": "A deve dizer a B como tentaria chamar sua atenção em uma festa."
     },
     "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -820,7 +1242,8 @@
       "directed",
       "flirt",
       "level_2",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -828,21 +1251,19 @@
     "id": "L2F002",
     "category": "flirt",
     "level": 2,
-    "intensity": 24,
-    "temperatureDelta": 3,
-    "tensionDelta": 6,
-    "durationSeconds": 20,
+    "intensity": 26,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve fazer uma provocação leve a B e terminar com um elogio."
+      "ptBR": "A deve sussurrar a B uma frase de flerte que gostaria de ouvir."
     },
     "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -853,7 +1274,8 @@
       "directed",
       "flirt",
       "level_2",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -861,21 +1283,19 @@
     "id": "L2F003",
     "category": "flirt",
     "level": 2,
-    "intensity": 26,
-    "temperatureDelta": 3,
-    "tensionDelta": 6,
-    "durationSeconds": 20,
+    "intensity": 27,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B qual tipo de flerte funciona melhor com ele."
+      "ptBR": "A deve dizer a B qual característica dele acha mais difícil de ignorar."
     },
     "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -886,7 +1306,8 @@
       "directed",
       "flirt",
       "level_2",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -895,20 +1316,18 @@
     "category": "flirt",
     "level": 2,
     "intensity": 28,
-    "temperatureDelta": 3,
-    "tensionDelta": 6,
-    "durationSeconds": 20,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B, sem tocar, como tentaria chamar sua atenção em uma festa."
+      "ptBR": "A deve perguntar a B qual tipo de aproximação funciona melhor com ele."
     },
     "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -919,139 +1338,8 @@
       "directed",
       "flirt",
       "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2F005",
-    "category": "flirt",
-    "level": 2,
-    "intensity": 30,
-    "temperatureDelta": 3,
-    "tensionDelta": 6,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve ficar a um passo de B e dizer uma frase de flerte que usaria em um encontro."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2F006",
-    "category": "flirt",
-    "level": 2,
-    "intensity": 32,
-    "temperatureDelta": 3,
-    "tensionDelta": 6,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual característica dele considera mais difícil de ignorar."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2F007",
-    "category": "flirt",
-    "level": 2,
-    "intensity": 34,
-    "temperatureDelta": 3,
-    "tensionDelta": 6,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve perguntar a B qual foi a melhor cantada que já recebeu."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2F008",
-    "category": "flirt",
-    "level": 2,
-    "intensity": 36,
-    "temperatureDelta": 3,
-    "tensionDelta": 6,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual seria o melhor cenário para um encontro entre os dois."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_2",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -1059,9 +1347,9 @@
     "id": "L2C001",
     "category": "confession",
     "level": 2,
-    "intensity": 24,
-    "temperatureDelta": 3,
-    "tensionDelta": 7,
+    "intensity": 27,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -1069,11 +1357,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve contar a B uma fantasia romântica ou de sedução sem precisar entrar em detalhes."
+      "ptBR": "A deve dizer a B qual situação entre adultos mais desperta sua curiosidade sem entrar em detalhes explícitos."
     },
     "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -1084,7 +1370,8 @@
       "directed",
       "confession",
       "level_2",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -1092,21 +1379,19 @@
     "id": "L2C002",
     "category": "confession",
     "level": 2,
-    "intensity": 26,
-    "temperatureDelta": 3,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
+    "intensity": 28,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve responder a B: “o que faria você perder a vergonha mais rápido?”."
+      "ptBR": "A deve contar a B qual foi o flerte mais memorável que já recebeu."
     },
     "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -1117,29 +1402,92 @@
       "directed",
       "confession",
       "level_2",
-      "consent_forward"
+      "consent_forward",
+      "social"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2C001",
+    "category": "chaos",
+    "level": 2,
+    "intensity": 31,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A escolhe entre segurar a mão de B por 30 segundos ou fazer uma confissão a B."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "chaos",
+      "level_2",
+      "consent_forward",
+      "social"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L2C002",
+    "category": "chaos",
+    "level": 2,
+    "intensity": 32,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem ficar próximos enquanto cada um diz uma coisa que considera atraente no outro."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "chaos",
+      "level_2",
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
     "id": "L2C003",
-    "category": "confession",
+    "category": "chaos",
     "level": 2,
-    "intensity": 28,
-    "temperatureDelta": 3,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
+    "intensity": 33,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B qual situação entre adultos mais desperta sua curiosidade."
+      "ptBR": "A deve pedir a B que escolha entre abraço, mãos dadas ou apenas contato visual; façam somente a opção que ambos aceitarem."
     },
     "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -1148,394 +1496,30 @@
     },
     "tags": [
       "directed",
-      "confession",
+      "chaos",
       "level_2",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
     "id": "L2C004",
-    "category": "confession",
-    "level": 2,
-    "intensity": 30,
-    "temperatureDelta": 3,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B qual foi a situação de flerte mais inesperada que viveu."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C005",
-    "category": "confession",
-    "level": 2,
-    "intensity": 32,
-    "temperatureDelta": 3,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual tipo de aproximação considera mais envolvente."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C006",
-    "category": "confession",
-    "level": 2,
-    "intensity": 34,
-    "temperatureDelta": 3,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B qual elogio íntimo mais gosta de ouvir."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C007",
-    "category": "confession",
-    "level": 2,
-    "intensity": 36,
-    "temperatureDelta": 3,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve responder a B se acredita em química imediata ou construída."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C008",
-    "category": "confession",
-    "level": 2,
-    "intensity": 38,
-    "temperatureDelta": 3,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual comportamento faz alguém se tornar instantaneamente mais atraente."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P001",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 28,
-    "temperatureDelta": 4,
-    "tensionDelta": 7,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve pedir a B autorização para um abraço. Se ambos quiserem, mantenham por 10 segundos."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P002",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 30,
-    "temperatureDelta": 4,
-    "tensionDelta": 7,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve sentar-se bem perto de B e manter contato visual durante 15 segundos."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P003",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 32,
-    "temperatureDelta": 4,
-    "tensionDelta": 7,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve ficar frente a frente com B por 15 segundos e dizer algo que acha irresistível nele."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P004",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 34,
-    "temperatureDelta": 4,
-    "tensionDelta": 7,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve pedir autorização para segurar a mão de B e, se ambos quiserem, ficar assim por 15 segundos."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2K001",
-    "category": "kiss",
-    "level": 2,
-    "intensity": 30,
-    "temperatureDelta": 5,
-    "tensionDelta": 8,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve perguntar claramente a B se gostaria de um beijo. Se ambos quiserem, podem trocar um beijo breve; caso contrário, façam um elogio íntimo."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2K002",
-    "category": "kiss",
-    "level": 2,
-    "intensity": 33,
-    "temperatureDelta": 5,
-    "tensionDelta": 8,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve se aproximar de B e perguntar se ele prefere um abraço ou um beijo breve. A escolha só vale se ambos estiverem confortáveis."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2X001",
     "category": "chaos",
     "level": 2,
-    "intensity": 30,
-    "temperatureDelta": 4,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
+    "intensity": 34,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve fazer a B uma pergunta que normalmente teria vergonha de fazer em um primeiro encontro."
+      "ptBR": "A deve dizer a B qual foi o momento mais inesperado da partida até agora."
     },
     "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -1546,436 +1530,8 @@
       "directed",
       "chaos",
       "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2X002",
-    "category": "chaos",
-    "level": 2,
-    "intensity": 33,
-    "temperatureDelta": 4,
-    "tensionDelta": 7,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual foi o momento mais provocante da partida até agora."
-    },
-    "requirements": {
-      "minTemperature": 20,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_2",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3F001",
-    "category": "flirt",
-    "level": 3,
-    "intensity": 38,
-    "temperatureDelta": 4,
-    "tensionDelta": 8,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B o que mais desperta sua curiosidade nele nesta partida."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3F002",
-    "category": "flirt",
-    "level": 3,
-    "intensity": 41,
-    "temperatureDelta": 4,
-    "tensionDelta": 8,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve sussurrar a B uma frase de flerte que gostaria de ouvir de alguém."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3F003",
-    "category": "flirt",
-    "level": 3,
-    "intensity": 44,
-    "temperatureDelta": 4,
-    "tensionDelta": 8,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve perguntar a B qual seria seu encontro ideal com alguém por quem sente atração."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3F004",
-    "category": "flirt",
-    "level": 3,
-    "intensity": 47,
-    "temperatureDelta": 4,
-    "tensionDelta": 8,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual momento da noite fez sua percepção sobre ele mudar."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3F005",
-    "category": "flirt",
-    "level": 3,
-    "intensity": 50,
-    "temperatureDelta": 4,
-    "tensionDelta": 8,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve ficar próximo de B e dizer qual característica dele gostaria de conhecer melhor."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3F006",
-    "category": "flirt",
-    "level": 3,
-    "intensity": 53,
-    "temperatureDelta": 4,
-    "tensionDelta": 8,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B uma frase que deixaria clara sua atração sem usar a palavra “atração”."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3C001",
-    "category": "confession",
-    "level": 3,
-    "intensity": 40,
-    "temperatureDelta": 4,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve revelar a B algo que acha particularmente sedutor em uma pessoa."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3C002",
-    "category": "confession",
-    "level": 3,
-    "intensity": 43,
-    "temperatureDelta": 4,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B uma experiência de flerte que nunca esqueceu."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3C003",
-    "category": "confession",
-    "level": 3,
-    "intensity": 46,
-    "temperatureDelta": 4,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B se alguém na sala o surpreendeu positivamente e explicar sem apontar ninguém."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3C004",
-    "category": "confession",
-    "level": 3,
-    "intensity": 49,
-    "temperatureDelta": 4,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B qual tipo de beijo considera mais memorável."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3C005",
-    "category": "confession",
-    "level": 3,
-    "intensity": 52,
-    "temperatureDelta": 4,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual é sua maior fraqueza quando existe química."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_3",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3C006",
-    "category": "confession",
-    "level": 3,
-    "intensity": 55,
-    "temperatureDelta": 4,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B qual situação de intimidade considera mais difícil de esquecer."
-    },
-    "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_3",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -1983,21 +1539,19 @@
     "id": "L3P001",
     "category": "proximity",
     "level": 3,
-    "intensity": 42,
-    "temperatureDelta": 5,
-    "tensionDelta": 9,
-    "durationSeconds": 25,
+    "intensity": 43,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve ficar frente a frente com B durante 20 segundos. Qualquer contato além disso depende de vontade mútua."
+      "ptBR": "Com consentimento de B, A deve abraçar B pela cintura por 20 segundos."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2008,7 +1562,8 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2016,9 +1571,9 @@
     "id": "L3P002",
     "category": "proximity",
     "level": 3,
-    "intensity": 45,
-    "temperatureDelta": 5,
-    "tensionDelta": 9,
+    "intensity": 44,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
     "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
@@ -2026,11 +1581,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve pedir autorização para segurar a mão de B e, se ambos quiserem, permanecer assim por 20 segundos."
+      "ptBR": "Com consentimento de B, A deve sentar-se muito próximo de B, com as pernas encostadas, por uma rodada."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2041,7 +1594,8 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2049,21 +1603,19 @@
     "id": "L3P003",
     "category": "proximity",
     "level": 3,
-    "intensity": 48,
-    "temperatureDelta": 5,
-    "tensionDelta": 9,
-    "durationSeconds": 25,
+    "intensity": 45,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve pedir a B autorização para um abraço demorado. Se ambos quiserem, mantenham-no por 15 segundos."
+      "ptBR": "Com consentimento de B, A deve tocar suavemente a nuca ou o cabelo de B por alguns segundos."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2074,7 +1626,8 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2082,21 +1635,19 @@
     "id": "L3P004",
     "category": "proximity",
     "level": 3,
-    "intensity": 51,
-    "temperatureDelta": 5,
-    "tensionDelta": 9,
-    "durationSeconds": 25,
+    "intensity": 46,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve sentar-se ao lado de B e permanecer encostado apenas se ambos quiserem até a próxima rodada."
+      "ptBR": "A e B devem permanecer frente a frente por 25 segundos; qualquer beijo depende de um “sim” dos dois."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2107,7 +1658,136 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L3P005",
+    "category": "proximity",
+    "level": 3,
+    "intensity": 47,
+    "temperatureDelta": 1,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve fazer uma massagem breve nas costas ou nos ombros de B."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_3",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L3P006",
+    "category": "proximity",
+    "level": 3,
+    "intensity": 48,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve manter uma mão na cintura de B e contato visual por 15 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_3",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L3P007",
+    "category": "proximity",
+    "level": 3,
+    "intensity": 49,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve se aproximar de B e dizer em voz baixa o que acha mais atraente nele."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_3",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L3P008",
+    "category": "proximity",
+    "level": 3,
+    "intensity": 50,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve escolher entre abraço apertado, mãos entrelaçadas ou carícia no rosto e manter por 15 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_3",
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2115,21 +1795,19 @@
     "id": "L3K001",
     "category": "kiss",
     "level": 3,
-    "intensity": 46,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 25,
+    "intensity": 47,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se quer um beijo. Se ambos disserem sim, troquem um beijo de até 10 segundos; caso contrário, façam uma confissão íntima um ao outro."
+      "ptBR": "A deve perguntar claramente a B se quer um beijo de até 10 segundos. Só façam se os dois disserem sim."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2140,7 +1818,8 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2148,9 +1827,9 @@
     "id": "L3K002",
     "category": "kiss",
     "level": 3,
-    "intensity": 49,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
+    "intensity": 48,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
     "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
@@ -2158,11 +1837,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve se aproximar de B, pedir consentimento para um beijo e, se ambos quiserem, escolher entre um beijo rápido ou um abraço demorado."
+      "ptBR": "A deve perguntar a B se aceita um beijo. Se sim, B decide se será breve ou mais demorado."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2173,7 +1850,8 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2181,21 +1859,19 @@
     "id": "L3K003",
     "category": "kiss",
     "level": 3,
-    "intensity": 52,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 25,
+    "intensity": 49,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se gostaria de repetir um beijo breve; se nunca se beijaram ou não quiserem, façam uma confissão."
+      "ptBR": "A e B devem ficar muito próximos; se os dois quiserem, podem se beijar por até 15 segundos."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2206,7 +1882,8 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2214,21 +1891,19 @@
     "id": "L3K004",
     "category": "kiss",
     "level": 3,
-    "intensity": 55,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 25,
+    "intensity": 50,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B qual tipo de beijo prefere. Se ambos quiserem, podem demonstrar de forma breve e consensual."
+      "ptBR": "A deve fazer um elogio a B e perguntar se pode terminar o elogio com um beijo."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2239,7 +1914,136 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L3K005",
+    "category": "kiss",
+    "level": 3,
+    "intensity": 51,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se prefere um beijo ou um abraço de 20 segundos; realizem somente a opção aceita pelos dois."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_3",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L3K006",
+    "category": "kiss",
+    "level": 3,
+    "intensity": 52,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve pedir consentimento a B para um beijo e, se houver sim mútuo, B escolhe quando ele termina."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_3",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L3K007",
+    "category": "kiss",
+    "level": 3,
+    "intensity": 53,
+    "temperatureDelta": 3,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem manter contato visual por 10 segundos e depois decidir juntos se querem um beijo ou apenas continuar próximos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_3",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L3K008",
+    "category": "kiss",
+    "level": 3,
+    "intensity": 54,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se gostaria de repetir um beijo anterior entre eles; se não houve beijo, façam um abraço demorado."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_3",
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2247,9 +2051,9 @@
     "id": "L3U001",
     "category": "undress",
     "level": 3,
-    "intensity": 48,
-    "temperatureDelta": 7,
-    "tensionDelta": 9,
+    "intensity": 51,
+    "temperatureDelta": 2,
+    "tensionDelta": 2,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -2257,11 +2061,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa que se sinta confortável em retirar e permanecer assim até a próxima rodada."
+      "ptBR": "A pode retirar voluntariamente uma peça de roupa e permanecer assim por duas rodadas."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2272,7 +2074,8 @@
       "directed",
       "undress",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2280,21 +2083,19 @@
     "id": "L3U002",
     "category": "undress",
     "level": 3,
-    "intensity": 51,
-    "temperatureDelta": 7,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
+    "intensity": 52,
+    "temperatureDelta": 2,
+    "tensionDelta": 2,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa. Depois deve dizer a B uma coisa que acha atraente nele."
+      "ptBR": "A pode retirar voluntariamente uma peça de roupa e depois ficar próximo de B por 20 segundos."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2305,7 +2106,8 @@
       "directed",
       "undress",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2313,21 +2115,19 @@
     "id": "L3U003",
     "category": "undress",
     "level": 3,
-    "intensity": 54,
-    "temperatureDelta": 7,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
+    "intensity": 53,
+    "temperatureDelta": 2,
+    "tensionDelta": 2,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode escolher entre recuperar uma peça previamente retirada ou retirar voluntariamente uma nova peça."
+      "ptBR": "A pode escolher entre retirar uma peça de roupa ou fazer uma interação de proximidade com B por 30 segundos."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2338,17 +2138,18 @@
       "directed",
       "undress",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
   {
-    "id": "L3U004",
-    "category": "undress",
+    "id": "L3F001",
+    "category": "flirt",
     "level": 3,
-    "intensity": 57,
-    "temperatureDelta": 7,
-    "tensionDelta": 9,
+    "intensity": 45,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -2356,11 +2157,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e responder a uma pergunta pessoal feita por B."
+      "ptBR": "A deve dizer a B o que nele mais aumentou sua curiosidade durante a partida."
     },
     "requirements": {
-      "minTemperature": 40,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2369,31 +2168,30 @@
     },
     "tags": [
       "directed",
-      "undress",
+      "flirt",
       "level_3",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L4F001",
+    "id": "L3F002",
     "category": "flirt",
-    "level": 4,
-    "intensity": 58,
-    "temperatureDelta": 5,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
+    "level": 3,
+    "intensity": 46,
+    "temperatureDelta": 1,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B, em voz baixa, qual momento da partida mais aumentou sua curiosidade."
+      "ptBR": "A deve dizer a B como imaginaria um encontro particularmente provocante entre os dois, sem detalhes explícitos."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2403,117 +2201,19 @@
     "tags": [
       "directed",
       "flirt",
-      "level_4",
-      "consent_forward"
+      "level_3",
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L4F002",
-    "category": "flirt",
-    "level": 4,
-    "intensity": 62,
-    "temperatureDelta": 5,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve perguntar a B qual seria a forma mais eficaz de deixá-lo sem graça mantendo tudo dentro do que ambos desejam."
-    },
-    "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_4",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4F003",
-    "category": "flirt",
-    "level": 4,
-    "intensity": 66,
-    "temperatureDelta": 5,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual característica dele seria mais difícil de ignorar em um encontro a dois."
-    },
-    "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_4",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4F004",
-    "category": "flirt",
-    "level": 4,
-    "intensity": 70,
-    "temperatureDelta": 5,
-    "tensionDelta": 9,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual interação gostaria de repetir naquela noite, sem obrigar ninguém a realizá-la."
-    },
-    "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_4",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4C001",
+    "id": "L3C001",
     "category": "confession",
-    "level": 4,
-    "intensity": 60,
-    "temperatureDelta": 5,
-    "tensionDelta": 10,
+    "level": 3,
+    "intensity": 46,
+    "temperatureDelta": 1,
+    "tensionDelta": 4,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -2521,11 +2221,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve contar a B uma situação íntima que considera especialmente marcante, sem precisar revelar detalhes identificáveis."
+      "ptBR": "A deve revelar a B uma coisa que considera especialmente sedutora em alguém."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2535,18 +2233,19 @@
     "tags": [
       "directed",
       "confession",
-      "level_4",
-      "consent_forward"
+      "level_3",
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L4C002",
-    "category": "confession",
-    "level": 4,
-    "intensity": 64,
-    "temperatureDelta": 5,
-    "tensionDelta": 10,
+    "id": "L3C001",
+    "category": "chaos",
+    "level": 3,
+    "intensity": 49,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -2554,11 +2253,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve responder: “qual é a coisa mais ousada que você faria em uma noite perfeita?”."
+      "ptBR": "A e B devem escolher juntos entre abraço, beijo consensual ou permanecer muito próximos por 30 segundos."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2567,31 +2264,30 @@
     },
     "tags": [
       "directed",
-      "confession",
-      "level_4",
-      "consent_forward"
+      "chaos",
+      "level_3",
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L4C003",
-    "category": "confession",
-    "level": 4,
-    "intensity": 68,
-    "temperatureDelta": 5,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
+    "id": "L3C002",
+    "category": "chaos",
+    "level": 3,
+    "intensity": 50,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve contar a B qual tipo de intimidade emocional considera mais excitante."
+      "ptBR": "A deve perguntar a B qual interação física não explícita desta partida ele mais gostaria de repetir."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2600,42 +2296,10 @@
     },
     "tags": [
       "directed",
-      "confession",
-      "level_4",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4C004",
-    "category": "confession",
-    "level": 4,
-    "intensity": 72,
-    "temperatureDelta": 5,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual desejo romântico ou sensual ainda não teve coragem de experimentar."
-    },
-    "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_4",
-      "consent_forward"
+      "chaos",
+      "level_3",
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -2643,21 +2307,19 @@
     "id": "L4P001",
     "category": "proximity",
     "level": 4,
-    "intensity": 62,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 25,
+    "intensity": 61,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve pedir autorização para um abraço mais demorado com B. Se ambos quiserem, mantenham-no por 20 segundos."
+      "ptBR": "Com consentimento de B, A deve envolver B em um abraço pela cintura por 30 segundos."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2668,7 +2330,8 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2676,9 +2339,9 @@
     "id": "L4P002",
     "category": "proximity",
     "level": 4,
-    "intensity": 66,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
+    "intensity": 62,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
     "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
@@ -2686,11 +2349,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem ficar próximos durante 20 segundos, mantendo contato visual. Qualquer contato físico adicional exige consentimento."
+      "ptBR": "Com consentimento de B, A deve acariciar o rosto ou o cabelo de B enquanto mantém contato visual."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2701,7 +2362,8 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2709,21 +2371,19 @@
     "id": "L4P003",
     "category": "proximity",
     "level": 4,
-    "intensity": 70,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 25,
+    "intensity": 63,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve pedir a B autorização para ficar abraçado com ele até o fim da próxima rodada."
+      "ptBR": "A e B devem permanecer encostados lado a lado até o fim da próxima rodada, se ambos estiverem confortáveis."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2734,7 +2394,8 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2742,21 +2403,19 @@
     "id": "L4P004",
     "category": "proximity",
     "level": 4,
-    "intensity": 74,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 25,
+    "intensity": 64,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve ficar frente a frente com B durante 25 segundos e dizer no final o que mais chamou sua atenção."
+      "ptBR": "Com consentimento de B, A deve fazer uma massagem breve nas costas de B por 30 segundos."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2767,7 +2426,72 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4P005",
+    "category": "proximity",
+    "level": 4,
+    "intensity": 65,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem ficar frente a frente e muito próximos por 30 segundos; qualquer beijo continua dependendo de consentimento mútuo."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_4",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4P006",
+    "category": "proximity",
+    "level": 4,
+    "intensity": 66,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve apoiar as mãos na cintura ou nos ombros de B durante 20 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_4",
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2775,21 +2499,19 @@
     "id": "L4K001",
     "category": "kiss",
     "level": 4,
-    "intensity": 66,
-    "temperatureDelta": 7,
-    "tensionDelta": 11,
-    "durationSeconds": 25,
+    "intensity": 65,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se gostaria de um beijo mais demorado. Se ambos quiserem, façam isso por até 15 segundos; caso contrário, usem a alternativa verbal."
+      "ptBR": "A deve perguntar a B se aceita um beijo mais demorado, de até 20 segundos. Só continuem enquanto ambos quiserem."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2800,7 +2522,8 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2808,9 +2531,9 @@
     "id": "L4K002",
     "category": "kiss",
     "level": 4,
-    "intensity": 70,
-    "temperatureDelta": 7,
-    "tensionDelta": 11,
+    "intensity": 66,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
     "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
@@ -2818,11 +2541,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B uma frase de flerte e perguntar se ele quer transformá-la em um beijo. A resposta deve ser explícita e livre."
+      "ptBR": "A deve dizer a B algo que acha irresistível nele e perguntar se pode beijá-lo."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2833,7 +2554,8 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2841,21 +2563,19 @@
     "id": "L4K003",
     "category": "kiss",
     "level": 4,
-    "intensity": 74,
-    "temperatureDelta": 7,
-    "tensionDelta": 11,
-    "durationSeconds": 25,
+    "intensity": 67,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se quer um beijo breve ou um abraço demorado. Só realizem a opção se ambos concordarem."
+      "ptBR": "A deve pedir consentimento para um beijo; se houver sim, B escolhe a duração dentro do que for confortável."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2866,7 +2586,8 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2874,21 +2595,19 @@
     "id": "L4K004",
     "category": "kiss",
     "level": 4,
-    "intensity": 78,
-    "temperatureDelta": 7,
-    "tensionDelta": 11,
-    "durationSeconds": 25,
+    "intensity": 68,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se gostaria de iniciar um beijo. Se qualquer um disser não, a carta vira uma confissão."
+      "ptBR": "A e B devem se aproximar lentamente e decidir juntos se querem se beijar ou manter apenas a proximidade."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2899,7 +2618,168 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4K005",
+    "category": "kiss",
+    "level": 4,
+    "intensity": 69,
+    "temperatureDelta": 2,
+    "tensionDelta": 5,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se quer repetir o melhor beijo que os dois já trocaram nesta partida."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_4",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4K006",
+    "category": "kiss",
+    "level": 4,
+    "intensity": 70,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se prefere um beijo breve seguido de abraço ou apenas um abraço longo."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_4",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4K007",
+    "category": "kiss",
+    "level": 4,
+    "intensity": 71,
+    "temperatureDelta": 3,
+    "tensionDelta": 4,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve convidar B para um beijo e deixar B decidir se aceita, adapta ou prefere uma alternativa de proximidade."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_4",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4K008",
+    "category": "kiss",
+    "level": 4,
+    "intensity": 72,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve fazer uma pergunta de flerte a B e, se ambos quiserem, terminar a resposta com um beijo."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_4",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4K009",
+    "category": "kiss",
+    "level": 4,
+    "intensity": 73,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B podem trocar um beijo consensual e depois permanecer abraçados por 20 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_4",
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2907,9 +2787,9 @@
     "id": "L4U001",
     "category": "undress",
     "level": 4,
-    "intensity": 68,
-    "temperatureDelta": 8,
-    "tensionDelta": 10,
+    "intensity": 67,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -2917,11 +2797,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa. Depois deve permanecer confortável e dizer a B uma coisa que gostaria de experimentar em um encontro."
+      "ptBR": "A pode retirar voluntariamente uma peça de roupa e permanecer assim por três rodadas."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2932,7 +2810,8 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2940,21 +2819,19 @@
     "id": "L4U002",
     "category": "undress",
     "level": 4,
-    "intensity": 72,
-    "temperatureDelta": 8,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
+    "intensity": 68,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e permanecer assim por duas rodadas. Nenhum outro participante pode exigir que retire mais."
+      "ptBR": "A pode retirar voluntariamente uma peça de roupa e depois escolher entre abraço ou beijo consensual com B."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2965,7 +2842,8 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -2973,21 +2851,19 @@
     "id": "L4U003",
     "category": "undress",
     "level": 4,
-    "intensity": 76,
-    "temperatureDelta": 8,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
+    "intensity": 69,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode escolher entre recuperar uma peça retirada ou permanecer como está e fazer uma confissão a B."
+      "ptBR": "A pode retirar uma peça de roupa que se sinta confortável em retirar e permanecer próximo de B por 30 segundos."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -2998,7 +2874,8 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3006,21 +2883,19 @@
     "id": "L4U004",
     "category": "undress",
     "level": 4,
-    "intensity": 80,
-    "temperatureDelta": 8,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
+    "intensity": 70,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e fazer a B um elogio íntimo."
+      "ptBR": "A pode escolher entre retirar uma peça ou permitir que a partida avance sem retirada, realizando uma interação de proximidade com B."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3031,17 +2906,18 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
   {
-    "id": "L4X001",
-    "category": "chaos",
+    "id": "L4U005",
+    "category": "undress",
     "level": 4,
-    "intensity": 64,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
+    "intensity": 71,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -3049,11 +2925,73 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve fazer a B uma pergunta íntima. B pode responder ou pedir que A responda primeiro."
+      "ptBR": "A pode retirar voluntariamente uma peça de roupa e dizer a B o que mais gosta na presença dele."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "undress",
+      "level_4",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4C001",
+    "category": "confession",
+    "level": 4,
+    "intensity": 63,
+    "temperatureDelta": 1,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve dizer a B qual limite ou preferência considera importante para que uma interação seja realmente boa."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "confession",
+      "level_4",
+      "consent_forward",
+      "social"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L4C001",
+    "category": "chaos",
+    "level": 4,
+    "intensity": 69,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem escolher juntos uma interação já realizada nesta partida para repetir, desde que ambos queiram."
+    },
+    "requirements": {
       "minPlayers": 4
     },
     "effects": {
@@ -3064,29 +3002,28 @@
       "directed",
       "chaos",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L4X002",
+    "id": "L4C002",
     "category": "chaos",
     "level": 4,
-    "intensity": 68,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
+    "intensity": 70,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve confessar a B qual foi a interação mais inesperada da partida até agora."
+      "ptBR": "A deve escolher entre abraço, beijo consensual ou uma peça de roupa a menos; B pode vetar qualquer opção."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3097,29 +3034,28 @@
       "directed",
       "chaos",
       "level_4",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L4X003",
+    "id": "L4C003",
     "category": "chaos",
     "level": 4,
-    "intensity": 72,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
+    "intensity": 71,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B qual foi o momento em que a tensão do jogo mais aumentou para ele."
+      "ptBR": "A e B devem permanecer próximos por 30 segundos e cada um dizer o que mais gostou na interação com o outro."
     },
     "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3130,304 +3066,8 @@
       "directed",
       "chaos",
       "level_4",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4X004",
-    "category": "chaos",
-    "level": 4,
-    "intensity": 76,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve escolher entre uma confissão, um elogio íntimo ou permanecer próximo de B durante 20 segundos."
-    },
-    "requirements": {
-      "minTemperature": 60,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_4",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5F001",
-    "category": "flirt",
-    "level": 5,
-    "intensity": 76,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual característica dele seria mais difícil de ignorar em um encontro a dois."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5F002",
-    "category": "flirt",
-    "level": 5,
-    "intensity": 80,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual momento entre os dois gostaria de repetir naquela noite."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5F003",
-    "category": "flirt",
-    "level": 5,
-    "intensity": 84,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B como demonstraria interesse se estivessem sozinhos em um encontro."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5F004",
-    "category": "flirt",
-    "level": 5,
-    "intensity": 88,
-    "temperatureDelta": 6,
-    "tensionDelta": 10,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual atitude dele considera mais provocante."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5C001",
-    "category": "confession",
-    "level": 5,
-    "intensity": 78,
-    "temperatureDelta": 6,
-    "tensionDelta": 11,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve responder a B: “o que você gostaria que alguém percebesse sobre você sem precisar perguntar?”."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5C002",
-    "category": "confession",
-    "level": 5,
-    "intensity": 82,
-    "temperatureDelta": 6,
-    "tensionDelta": 11,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve revelar a B um desejo romântico ou de intimidade que se sinta confortável em compartilhar."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5C003",
-    "category": "confession",
-    "level": 5,
-    "intensity": 86,
-    "temperatureDelta": 6,
-    "tensionDelta": 11,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual tipo de intimidade considera mais intensa sem entrar em detalhes explícitos."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5C004",
-    "category": "confession",
-    "level": 5,
-    "intensity": 90,
-    "temperatureDelta": 6,
-    "tensionDelta": 11,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B qual seria seu final ideal para uma noite com muita química."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_5",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
@@ -3435,21 +3075,19 @@
     "id": "L5P001",
     "category": "proximity",
     "level": 5,
-    "intensity": 80,
-    "temperatureDelta": 7,
-    "tensionDelta": 11,
-    "durationSeconds": 25,
+    "intensity": 79,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve pedir autorização para um abraço de 30 segundos com B. Se qualquer um preferir não fazer, basta passar."
+      "ptBR": "Com consentimento de B, A deve permanecer abraçado a B por 40 segundos, ajustando a posição para que ambos fiquem confortáveis."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3460,7 +3098,8 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3468,9 +3107,9 @@
     "id": "L5P002",
     "category": "proximity",
     "level": 5,
-    "intensity": 84,
-    "temperatureDelta": 7,
-    "tensionDelta": 11,
+    "intensity": 80,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
     "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
@@ -3478,11 +3117,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve ficar frente a frente com B durante 30 segundos. O desafio termina imediatamente se qualquer um disser para parar."
+      "ptBR": "A e B devem ficar muito próximos por 40 segundos; podem conversar, manter silêncio ou se beijar se houver vontade mútua."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3493,7 +3130,8 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3501,21 +3139,19 @@
     "id": "L5P003",
     "category": "proximity",
     "level": 5,
-    "intensity": 88,
-    "temperatureDelta": 7,
-    "tensionDelta": 11,
-    "durationSeconds": 25,
+    "intensity": 81,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se quer permanecer abraçado com ele durante a próxima rodada."
+      "ptBR": "Com consentimento de B, A deve escolher uma carícia não íntima — rosto, cabelo, ombros ou costas — e mantê-la por 20 segundos."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3526,7 +3162,8 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3534,21 +3171,19 @@
     "id": "L5P004",
     "category": "proximity",
     "level": 5,
-    "intensity": 92,
-    "temperatureDelta": 7,
-    "tensionDelta": 11,
-    "durationSeconds": 25,
+    "intensity": 82,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve ficar próximo de B por 30 segundos e dizer ao final o que mais aumentou sua tensão naquela interação."
+      "ptBR": "A e B devem escolher juntos a forma de proximidade física não explícita que mais gostaram nesta partida e repeti-la."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3559,7 +3194,40 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5P005",
+    "category": "proximity",
+    "level": 5,
+    "intensity": 83,
+    "temperatureDelta": 2,
+    "tensionDelta": 5,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "Com consentimento de B, A deve envolver B pela cintura e permanecer assim enquanto diz o que mais o atrai nele."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "proximity",
+      "level_5",
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3567,21 +3235,19 @@
     "id": "L5K001",
     "category": "kiss",
     "level": 5,
-    "intensity": 82,
-    "temperatureDelta": 8,
-    "tensionDelta": 12,
-    "durationSeconds": 25,
+    "intensity": 81,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se quer um beijo. Se ambos quiserem, podem trocar um beijo mais demorado; se não, façam uma confissão sincera."
+      "ptBR": "A deve perguntar a B se quer um beijo demorado. Se houver sim mútuo, continuem somente enquanto ambos quiserem."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3592,7 +3258,8 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3600,9 +3267,9 @@
     "id": "L5K002",
     "category": "kiss",
     "level": 5,
-    "intensity": 86,
-    "temperatureDelta": 8,
-    "tensionDelta": 12,
+    "intensity": 82,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
     "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
@@ -3610,11 +3277,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B qual tipo de beijo prefere. Se ambos quiserem, façam uma versão breve e consensual; caso contrário, descrevam verbalmente a preferência."
+      "ptBR": "A deve dizer a B por que gostaria de beijá-lo e então perguntar se ele quer o beijo."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3625,7 +3290,8 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3633,21 +3299,19 @@
     "id": "L5K003",
     "category": "kiss",
     "level": 5,
-    "intensity": 90,
-    "temperatureDelta": 8,
-    "tensionDelta": 12,
-    "durationSeconds": 25,
+    "intensity": 83,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se gostaria de repetir um beijo anterior. Se qualquer um não quiser, a carta se transforma em elogio íntimo."
+      "ptBR": "A e B devem escolher juntos entre um beijo demorado ou uma sequência de dois beijos breves."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3658,7 +3322,8 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3666,21 +3331,19 @@
     "id": "L5K004",
     "category": "kiss",
     "level": 5,
-    "intensity": 94,
-    "temperatureDelta": 8,
-    "tensionDelta": 12,
-    "durationSeconds": 25,
+    "intensity": 84,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B uma frase de flerte e perguntar se ele gostaria de um beijo. Só avancem com um sim claro de ambos."
+      "ptBR": "A deve convidar B para repetir o beijo de que mais gostaram nesta partida; B pode adaptar ou recusar."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3691,7 +3354,200 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5K005",
+    "category": "kiss",
+    "level": 5,
+    "intensity": 85,
+    "temperatureDelta": 2,
+    "tensionDelta": 5,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B como prefere ser beijado e, se ambos quiserem, realizar uma versão breve dessa preferência."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_5",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5K006",
+    "category": "kiss",
+    "level": 5,
+    "intensity": 86,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B devem manter contato visual e decidir juntos quem inicia um beijo consensual."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_5",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5K007",
+    "category": "kiss",
+    "level": 5,
+    "intensity": 87,
+    "temperatureDelta": 3,
+    "tensionDelta": 4,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se quer um beijo seguido de um abraço de 30 segundos."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_5",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5K008",
+    "category": "kiss",
+    "level": 5,
+    "intensity": 88,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 15,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve oferecer a B duas opções: beijo consensual ou proximidade silenciosa por 40 segundos. B escolhe."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_5",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5K009",
+    "category": "kiss",
+    "level": 5,
+    "intensity": 89,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B podem trocar um beijo consensual e permanecer próximos até a próxima rodada."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_5",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5K010",
+    "category": "kiss",
+    "level": 5,
+    "intensity": 90,
+    "temperatureDelta": 2,
+    "tensionDelta": 5,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B se quer transformar este desafio em um beijo; se não, os dois fazem um abraço demorado."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "kiss",
+      "level_5",
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3699,9 +3555,9 @@
     "id": "L5U001",
     "category": "undress",
     "level": 5,
-    "intensity": 84,
-    "temperatureDelta": 9,
-    "tensionDelta": 11,
+    "intensity": 83,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -3709,11 +3565,9 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode escolher retirar voluntariamente uma peça de roupa. O grupo não pode indicar qual peça nem pressionar por outra."
+      "ptBR": "A pode retirar voluntariamente uma peça de roupa e escolher uma interação de proximidade com B."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3724,7 +3578,8 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3732,21 +3587,19 @@
     "id": "L5U002",
     "category": "undress",
     "level": 5,
-    "intensity": 88,
-    "temperatureDelta": 9,
-    "tensionDelta": 11,
-    "durationSeconds": 20,
+    "intensity": 84,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 25,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode escolher ficar com uma peça a menos durante as próximas duas rodadas. Depois, deve escolher entre uma confissão ou um elogio para B."
+      "ptBR": "A pode retirar voluntariamente uma peça e permanecer abraçado a B por 30 segundos, se ambos quiserem."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3757,7 +3610,8 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3765,21 +3619,19 @@
     "id": "L5U003",
     "category": "undress",
     "level": 5,
-    "intensity": 92,
-    "temperatureDelta": 9,
-    "tensionDelta": 11,
-    "durationSeconds": 20,
+    "intensity": 85,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 30,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode escolher entre recuperar uma peça retirada ou retirar voluntariamente outra peça."
+      "ptBR": "A pode escolher ficar com uma peça a menos pelas próximas três rodadas; depois faz um elogio a B."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3790,7 +3642,8 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
@@ -3798,21 +3651,19 @@
     "id": "L5U004",
     "category": "undress",
     "level": 5,
-    "intensity": 96,
-    "temperatureDelta": 9,
-    "tensionDelta": 11,
-    "durationSeconds": 20,
+    "intensity": 86,
+    "temperatureDelta": 2,
+    "tensionDelta": 3,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e permanecer assim até a próxima mudança de nível."
+      "ptBR": "A pode escolher entre retirar uma peça de roupa ou repetir uma interação física não explícita com B."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3823,17 +3674,18 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "physical"
     ],
     "weight": 1.0
   },
   {
-    "id": "L5X001",
-    "category": "chaos",
+    "id": "L5U005",
+    "category": "undress",
     "level": 5,
-    "intensity": 84,
-    "temperatureDelta": 8,
-    "tensionDelta": 12,
+    "intensity": 87,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
     "durationSeconds": 20,
     "participantCount": 2,
     "roles": {
@@ -3841,11 +3693,41 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B o que mais aumentou sua tensão durante a partida, sem precisar citar nenhuma pessoa além de B."
+      "ptBR": "A pode retirar voluntariamente uma peça e perguntar a B qual interação entre eles mais gostou nesta partida."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "undress",
+      "level_5",
+      "consent_forward",
+      "physical"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5C001",
+    "category": "chaos",
+    "level": 5,
+    "intensity": 85,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 20,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B escolhem juntos uma interação física não explícita já feita por qualquer dupla e adaptam para os dois."
+    },
+    "requirements": {
       "minPlayers": 4
     },
     "effects": {
@@ -3856,29 +3738,92 @@
       "directed",
       "chaos",
       "level_5",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L5X002",
+    "id": "L5C002",
+    "category": "chaos",
+    "level": 5,
+    "intensity": 86,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 25,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A deve perguntar a B qual interação gostaria de prolongar por mais 30 segundos e realizá-la apenas se ambos quiserem."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "chaos",
+      "level_5",
+      "consent_forward",
+      "social"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5C003",
+    "category": "chaos",
+    "level": 5,
+    "intensity": 87,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 30,
+    "participantCount": 2,
+    "roles": {
+      "actor": "A",
+      "target": "B"
+    },
+    "text": {
+      "ptBR": "A e B podem combinar abraço, beijo consensual e proximidade em uma sequência curta definida pelos dois."
+    },
+    "requirements": {
+      "minPlayers": 4
+    },
+    "effects": {
+      "clothing": null,
+      "power": null
+    },
+    "tags": [
+      "directed",
+      "chaos",
+      "level_5",
+      "consent_forward",
+      "social"
+    ],
+    "weight": 1.0
+  },
+  {
+    "id": "L5C004",
     "category": "chaos",
     "level": 5,
     "intensity": 88,
-    "temperatureDelta": 8,
-    "tensionDelta": 12,
-    "durationSeconds": 20,
+    "temperatureDelta": 2,
+    "tensionDelta": 4,
+    "durationSeconds": 15,
     "participantCount": 2,
     "roles": {
       "actor": "A",
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B qual seria um final perfeito para esta noite. B pode responder, adaptar ou passar."
+      "ptBR": "A deve oferecer a B três opções — abraço, beijo consensual ou proximidade silenciosa — e B escolhe uma."
     },
     "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
       "minPlayers": 4
     },
     "effects": {
@@ -3889,73 +3834,8 @@
       "directed",
       "chaos",
       "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5X003",
-    "category": "chaos",
-    "level": 5,
-    "intensity": 92,
-    "temperatureDelta": 8,
-    "tensionDelta": 12,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual interação ainda não aconteceu e que gostaria de ver acontecer, sem direcionar terceiros."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_5",
-      "consent_forward"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5X004",
-    "category": "chaos",
-    "level": 5,
-    "intensity": 96,
-    "temperatureDelta": 8,
-    "tensionDelta": 12,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve escolher entre uma confissão, um beijo consensual ou apenas permanecer próximo de B por 30 segundos."
-    },
-    "requirements": {
-      "minTemperature": 80,
-      "maxTemperature": 100,
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_5",
-      "consent_forward"
+      "consent_forward",
+      "social"
     ],
     "weight": 1.0
   }
