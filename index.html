@@ -1,26 +1,1436 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#100b18"><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icons/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="CALOR"><title>CALOR</title>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100b18">
+
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CALOR">
+
+<title>CALOR</title>
+
 <style>
-:root{--bg:#0e0915;--panel:#1a1223;--txt:#fff;--muted:#ad9bbb;--pink:#ff4fa3;--violet:#8d68ff;--line:#49345a}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0,#3c174e 0,#0e0915 48%,#08060c 100%);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,Arial,sans-serif;min-height:100vh}.app{max-width:680px;margin:auto;padding:env(safe-area-inset-top) 12px calc(18px + env(safe-area-inset-bottom))}header{display:flex;justify-content:space-between;align-items:center;height:48px}.logo{font-weight:900;letter-spacing:.15em}.small{font-size:11px;color:var(--muted)}.screen{display:none}.screen.active{display:block}.card{background:linear-gradient(145deg,rgba(38,25,54,.96),rgba(20,13,29,.96));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:14px;margin:8px 0}.hero{padding:22px 2px 12px}.hero h1{font-size:38px;line-height:.96;margin:0 0 10px}.hero p,.notice{color:var(--muted);line-height:1.45}label{display:block;font-size:12px;color:var(--muted);margin:12px 0 6px}input,select{width:100%;background:#100a17;color:#fff;border:1px solid var(--line);border-radius:12px;padding:11px}button{border:0;border-radius:12px;padding:11px 13px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--pink),var(--violet))}button.secondary{background:#332241}button.danger{background:#431928}.row{display:flex;gap:8px}.row>*{flex:1}.players{display:grid;grid-template-columns:1fr 1fr;gap:8px}.topbar{display:flex;gap:6px;align-items:center}.topbar .round{flex:1;text-align:center;font-weight:750;font-size:12px;color:var(--muted)}.pair{text-align:center;padding:11px 8px}.pair .names{font-size:29px;font-weight:900}.arrow{color:var(--pink);padding:0 7px}.selector{text-align:center;color:var(--muted);font-size:11px;margin-top:3px}.options{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:8px}.option{min-height:64px;padding:9px 6px;background:#24172f;border:1px solid #4a3458;text-align:center}.option span{display:block;font-size:18px;margin-bottom:3px}.option b{display:block;font-size:11px}.option small{display:block;font-size:9px;color:var(--muted);margin-top:3px}.prompt{font-size:18px;line-height:1.4;margin:14px 0}.category{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#ff8bc4;font-weight:850}.notice{padding:10px;border-radius:12px;background:#150e1c;font-size:11px}.hidden{display:none!important}footer{padding:18px 2px;color:#6e6076;font-size:10px}@media(min-width:600px){.players{grid-template-columns:repeat(3,1fr)}}
-</style></head><body><div class="app"><header><div class="logo">CALOR</div><div class="small">PWA 0.4</div></header>
-<section id="setup" class="screen active"><div class="hero"><h1>Uma noite.<br>Uma dinâmica.</h1><p>Mais interação, menos tela. O algoritmo conduz a progressão sem mostrar placares.</p></div><div class="card"><label>Jogadores</label><select id="count"><option value="4">4 jogadores</option><option value="6" selected>6 jogadores</option></select><label>Nomes</label><div id="nameInputs" class="players"></div><label><input id="adultCheck" type="checkbox" style="width:auto;margin-right:8px">Todos são adultos e participam voluntariamente.</label><button id="startBtn" style="width:100%;margin-top:14px">COMEÇAR</button></div><div class="notice">Passar, pausar ou encerrar é sempre permitido. Contato físico depende de consentimento de todos os envolvidos.</div></section>
-<section id="game" class="screen"><div class="topbar"><button class="secondary" id="rulesBtn">?</button><div class="round" id="roundLabel"></div><button class="secondary" id="pauseBtn">Ⅱ</button><button class="secondary" id="endBtn">×</button></div><div class="card pair"><div class="category">INTERAÇÃO</div><div class="names"><span id="actor"></span><span class="arrow">→</span><span id="target"></span></div><div class="selector">Carta escolhida por <b id="selector"></b></div></div><div class="card"><div class="category">ESCOLHA SEM VER O CONTEÚDO</div><div id="options" class="options"></div></div><div id="resolution" class="card hidden"><div id="rCategory" class="category"></div><div id="rText" class="prompt"></div><div class="row"><button id="acceptBtn">FEITO</button><button class="secondary" id="declineBtn">PASSAR</button></div></div></section>
-<section id="pause" class="screen"><div class="hero"><h1>Pausa.</h1><p>O estado da partida foi preservado.</p></div><div class="card row"><button id="resumeBtn">CONTINUAR</button><button class="danger" id="pauseEndBtn">ENCERRAR</button></div></section>
-<section id="end" class="screen"><div class="hero"><h1>Fim da partida.</h1><p>Partida encerrada. Nenhum placar é exibido.</p></div><button id="newBtn" style="width:100%">NOVA PARTIDA</button></section><footer>CALOR • o jogo continua até o grupo decidir encerrar.</footer></div>
-<script>const EMBEDDED_CARDS=[{"id":"L1P001","category":"proximity","level":1,"intensity":9,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve encostar a palma da mão na palma de B por 15 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P002","category":"proximity","level":1,"intensity":10,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem ficar joelho com joelho por 20 segundos, mantendo contato visual."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P003","category":"proximity","level":1,"intensity":11,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve tocar o antebraço de B enquanto faz um elogio sincero."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P004","category":"proximity","level":1,"intensity":12,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve ficar ombro a ombro com B até o fim da rodada."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P005","category":"proximity","level":1,"intensity":13,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve dar um abraço de 10 segundos em B."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P006","category":"proximity","level":1,"intensity":14,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem ficar frente a frente, a um passo de distância, por 15 segundos sem falar."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P007","category":"proximity","level":1,"intensity":15,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve segurar a mão de B por 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P008","category":"proximity","level":1,"intensity":16,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve se aproximar de B o suficiente para falar baixo e dizer o que mais chamou sua atenção nele."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P009","category":"proximity","level":1,"intensity":17,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve apoiar uma mão no ombro de B durante 15 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1P010","category":"proximity","level":1,"intensity":18,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem trocar de lugar sentando-se lado a lado e permanecer assim até a próxima carta."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_1","consent_forward","physical"],"weight":1.0},{"id":"L1F001","category":"flirt","level":1,"intensity":9,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve olhar para B por 8 segundos e fazer um elogio sincero."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_1","consent_forward","social"],"weight":1.0},{"id":"L1F002","category":"flirt","level":1,"intensity":10,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual detalhe do jeito dele mais chamou sua atenção."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_1","consent_forward","social"],"weight":1.0},{"id":"L1F003","category":"flirt","level":1,"intensity":11,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual foi sua primeira impressão dele."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_1","consent_forward","social"],"weight":1.0},{"id":"L1F004","category":"flirt","level":1,"intensity":12,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve completar olhando para B: “uma coisa em você que chama atenção é...”"},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_1","consent_forward","social"],"weight":1.0},{"id":"L1F005","category":"flirt","level":1,"intensity":13,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual roupa, acessório ou detalhe visual dele acha mais bonito."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_1","consent_forward","social"],"weight":1.0},{"id":"L1F006","category":"flirt","level":1,"intensity":14,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve fazer a B uma provocação leve e terminar com um elogio."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_1","consent_forward","social"],"weight":1.0},{"id":"L1C001","category":"confession","level":1,"intensity":11,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve contar a B uma situação em que já ficou sem graça por causa de atração."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","confession","level_1","consent_forward","social"],"weight":1.0},{"id":"L1C002","category":"confession","level":1,"intensity":12,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual tipo de atitude costuma despertar sua curiosidade."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","confession","level_1","consent_forward","social"],"weight":1.0},{"id":"L1C003","category":"confession","level":1,"intensity":13,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B o que faz um flerte funcionar com ele."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","confession","level_1","consent_forward","social"],"weight":1.0},{"id":"L1C004","category":"confession","level":1,"intensity":14,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve contar a B uma coisa sobre si que normalmente demora a revelar."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","confession","level_1","consent_forward","social"],"weight":1.0},{"id":"L1C001","category":"chaos","level":1,"intensity":13,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem trocar um elogio cada um, sem repetir algo já dito nesta partida."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_1","consent_forward","social"],"weight":1.0},{"id":"L1C002","category":"chaos","level":1,"intensity":14,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve fazer uma pergunta de química a B; B pode responder ou devolver a mesma pergunta."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_1","consent_forward","social"],"weight":1.0},{"id":"L1C003","category":"chaos","level":1,"intensity":15,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem manter contato visual enquanto o grupo conta lentamente até 10."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_1","consent_forward","social"],"weight":1.0},{"id":"L1C004","category":"chaos","level":1,"intensity":16,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual interação entre os dois gostaria de repetir mais tarde, se ambos quiserem."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_1","consent_forward","social"],"weight":1.0},{"id":"L2P001","category":"proximity","level":2,"intensity":25,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve abraçá-lo por 15 segundos e permanecer próximo depois."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P002","category":"proximity","level":2,"intensity":26,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve segurar as duas mãos de B por 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P003","category":"proximity","level":2,"intensity":27,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem ficar frente a frente a poucos centímetros de distância por 15 segundos; qualquer aproximação adicional exige vontade mútua."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P004","category":"proximity","level":2,"intensity":28,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve tocar suavemente o rosto de B por alguns segundos e depois fazer um elogio."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P005","category":"proximity","level":2,"intensity":29,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve apoiar a mão na cintura de B durante 15 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P006","category":"proximity","level":2,"intensity":30,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve sentar-se bem próximo de B e permanecer assim até a próxima rodada."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P007","category":"proximity","level":2,"intensity":31,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve fazer uma massagem breve nos ombros de B por 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P008","category":"proximity","level":2,"intensity":32,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem ficar de pé frente a frente e aproximar-se até uma distância confortável para ambos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P009","category":"proximity","level":2,"intensity":33,"temperatureDelta":1,"tensionDelta":2,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve passar o braço pelos ombros de B e permanecer assim por 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2P010","category":"proximity","level":2,"intensity":34,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer algo provocante a B enquanto permanece próximo dele por 15 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2K001","category":"kiss","level":2,"intensity":29,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se ele aceita um beijo no rosto. Se ambos quiserem, A realiza o beijo."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2K002","category":"kiss","level":2,"intensity":30,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se gostaria de um beijo breve. Se ambos disserem sim, podem trocar o beijo."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2K003","category":"kiss","level":2,"intensity":31,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem aproximar os rostos por alguns segundos. Se ambos quiserem um beijo, podem fazê-lo; caso contrário, apenas mantenham o olhar."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2K004","category":"kiss","level":2,"intensity":32,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se prefere um abraço demorado ou um beijo breve e realizar apenas a opção aceita por ambos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_2","consent_forward","physical"],"weight":1.0},{"id":"L2F001","category":"flirt","level":2,"intensity":25,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B como tentaria chamar sua atenção em uma festa."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_2","consent_forward","social"],"weight":1.0},{"id":"L2F002","category":"flirt","level":2,"intensity":26,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve sussurrar a B uma frase de flerte que gostaria de ouvir."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_2","consent_forward","social"],"weight":1.0},{"id":"L2F003","category":"flirt","level":2,"intensity":27,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual característica dele acha mais difícil de ignorar."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_2","consent_forward","social"],"weight":1.0},{"id":"L2F004","category":"flirt","level":2,"intensity":28,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B qual tipo de aproximação funciona melhor com ele."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_2","consent_forward","social"],"weight":1.0},{"id":"L2C001","category":"confession","level":2,"intensity":27,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual situação entre adultos mais desperta sua curiosidade sem entrar em detalhes explícitos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","confession","level_2","consent_forward","social"],"weight":1.0},{"id":"L2C002","category":"confession","level":2,"intensity":28,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve contar a B qual foi o flerte mais memorável que já recebeu."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","confession","level_2","consent_forward","social"],"weight":1.0},{"id":"L2C001","category":"chaos","level":2,"intensity":31,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A escolhe entre segurar a mão de B por 30 segundos ou fazer uma confissão a B."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_2","consent_forward","social"],"weight":1.0},{"id":"L2C002","category":"chaos","level":2,"intensity":32,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem ficar próximos enquanto cada um diz uma coisa que considera atraente no outro."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_2","consent_forward","social"],"weight":1.0},{"id":"L2C003","category":"chaos","level":2,"intensity":33,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve pedir a B que escolha entre abraço, mãos dadas ou apenas contato visual; façam somente a opção que ambos aceitarem."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_2","consent_forward","social"],"weight":1.0},{"id":"L2C004","category":"chaos","level":2,"intensity":34,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual foi o momento mais inesperado da partida até agora."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_2","consent_forward","social"],"weight":1.0},{"id":"L3P001","category":"proximity","level":3,"intensity":43,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve abraçar B pela cintura por 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3P002","category":"proximity","level":3,"intensity":44,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve sentar-se muito próximo de B, com as pernas encostadas, por uma rodada."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3P003","category":"proximity","level":3,"intensity":45,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve tocar suavemente a nuca ou o cabelo de B por alguns segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3P004","category":"proximity","level":3,"intensity":46,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem permanecer frente a frente por 25 segundos; qualquer beijo depende de um “sim” dos dois."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3P005","category":"proximity","level":3,"intensity":47,"temperatureDelta":1,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve fazer uma massagem breve nas costas ou nos ombros de B."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3P006","category":"proximity","level":3,"intensity":48,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve manter uma mão na cintura de B e contato visual por 15 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3P007","category":"proximity","level":3,"intensity":49,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve se aproximar de B e dizer em voz baixa o que acha mais atraente nele."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3P008","category":"proximity","level":3,"intensity":50,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve escolher entre abraço apertado, mãos entrelaçadas ou carícia no rosto e manter por 15 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3K001","category":"kiss","level":3,"intensity":47,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar claramente a B se quer um beijo de até 10 segundos. Só façam se os dois disserem sim."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3K002","category":"kiss","level":3,"intensity":48,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se aceita um beijo. Se sim, B decide se será breve ou mais demorado."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3K003","category":"kiss","level":3,"intensity":49,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem ficar muito próximos; se os dois quiserem, podem se beijar por até 15 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3K004","category":"kiss","level":3,"intensity":50,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve fazer um elogio a B e perguntar se pode terminar o elogio com um beijo."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3K005","category":"kiss","level":3,"intensity":51,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se prefere um beijo ou um abraço de 20 segundos; realizem somente a opção aceita pelos dois."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3K006","category":"kiss","level":3,"intensity":52,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve pedir consentimento a B para um beijo e, se houver sim mútuo, B escolhe quando ele termina."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3K007","category":"kiss","level":3,"intensity":53,"temperatureDelta":3,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem manter contato visual por 10 segundos e depois decidir juntos se querem um beijo ou apenas continuar próximos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3K008","category":"kiss","level":3,"intensity":54,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se gostaria de repetir um beijo anterior entre eles; se não houve beijo, façam um abraço demorado."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3U001","category":"undress","level":3,"intensity":51,"temperatureDelta":2,"tensionDelta":2,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar voluntariamente uma peça de roupa e permanecer assim por duas rodadas."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3U002","category":"undress","level":3,"intensity":52,"temperatureDelta":2,"tensionDelta":2,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar voluntariamente uma peça de roupa e depois ficar próximo de B por 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3U003","category":"undress","level":3,"intensity":53,"temperatureDelta":2,"tensionDelta":2,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode escolher entre retirar uma peça de roupa ou fazer uma interação de proximidade com B por 30 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_3","consent_forward","physical"],"weight":1.0},{"id":"L3F001","category":"flirt","level":3,"intensity":45,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B o que nele mais aumentou sua curiosidade durante a partida."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_3","consent_forward","social"],"weight":1.0},{"id":"L3F002","category":"flirt","level":3,"intensity":46,"temperatureDelta":1,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B como imaginaria um encontro particularmente provocante entre os dois, sem detalhes explícitos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","flirt","level_3","consent_forward","social"],"weight":1.0},{"id":"L3C001","category":"confession","level":3,"intensity":46,"temperatureDelta":1,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve revelar a B uma coisa que considera especialmente sedutora em alguém."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","confession","level_3","consent_forward","social"],"weight":1.0},{"id":"L3C001","category":"chaos","level":3,"intensity":49,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem escolher juntos entre abraço, beijo consensual ou permanecer muito próximos por 30 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_3","consent_forward","social"],"weight":1.0},{"id":"L3C002","category":"chaos","level":3,"intensity":50,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B qual interação física não explícita desta partida ele mais gostaria de repetir."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_3","consent_forward","social"],"weight":1.0},{"id":"L4P001","category":"proximity","level":4,"intensity":61,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve envolver B em um abraço pela cintura por 30 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4P002","category":"proximity","level":4,"intensity":62,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve acariciar o rosto ou o cabelo de B enquanto mantém contato visual."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4P003","category":"proximity","level":4,"intensity":63,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem permanecer encostados lado a lado até o fim da próxima rodada, se ambos estiverem confortáveis."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4P004","category":"proximity","level":4,"intensity":64,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve fazer uma massagem breve nas costas de B por 30 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4P005","category":"proximity","level":4,"intensity":65,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem ficar frente a frente e muito próximos por 30 segundos; qualquer beijo continua dependendo de consentimento mútuo."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4P006","category":"proximity","level":4,"intensity":66,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve apoiar as mãos na cintura ou nos ombros de B durante 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K001","category":"kiss","level":4,"intensity":65,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se aceita um beijo mais demorado, de até 20 segundos. Só continuem enquanto ambos quiserem."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K002","category":"kiss","level":4,"intensity":66,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B algo que acha irresistível nele e perguntar se pode beijá-lo."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K003","category":"kiss","level":4,"intensity":67,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve pedir consentimento para um beijo; se houver sim, B escolhe a duração dentro do que for confortável."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K004","category":"kiss","level":4,"intensity":68,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem se aproximar lentamente e decidir juntos se querem se beijar ou manter apenas a proximidade."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K005","category":"kiss","level":4,"intensity":69,"temperatureDelta":2,"tensionDelta":5,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se quer repetir o melhor beijo que os dois já trocaram nesta partida."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K006","category":"kiss","level":4,"intensity":70,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se prefere um beijo breve seguido de abraço ou apenas um abraço longo."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K007","category":"kiss","level":4,"intensity":71,"temperatureDelta":3,"tensionDelta":4,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve convidar B para um beijo e deixar B decidir se aceita, adapta ou prefere uma alternativa de proximidade."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K008","category":"kiss","level":4,"intensity":72,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve fazer uma pergunta de flerte a B e, se ambos quiserem, terminar a resposta com um beijo."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4K009","category":"kiss","level":4,"intensity":73,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B podem trocar um beijo consensual e depois permanecer abraçados por 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4U001","category":"undress","level":4,"intensity":67,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar voluntariamente uma peça de roupa e permanecer assim por três rodadas."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4U002","category":"undress","level":4,"intensity":68,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar voluntariamente uma peça de roupa e depois escolher entre abraço ou beijo consensual com B."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4U003","category":"undress","level":4,"intensity":69,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar uma peça de roupa que se sinta confortável em retirar e permanecer próximo de B por 30 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4U004","category":"undress","level":4,"intensity":70,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode escolher entre retirar uma peça ou permitir que a partida avance sem retirada, realizando uma interação de proximidade com B."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4U005","category":"undress","level":4,"intensity":71,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar voluntariamente uma peça de roupa e dizer a B o que mais gosta na presença dele."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_4","consent_forward","physical"],"weight":1.0},{"id":"L4C001","category":"confession","level":4,"intensity":63,"temperatureDelta":1,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B qual limite ou preferência considera importante para que uma interação seja realmente boa."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","confession","level_4","consent_forward","social"],"weight":1.0},{"id":"L4C001","category":"chaos","level":4,"intensity":69,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem escolher juntos uma interação já realizada nesta partida para repetir, desde que ambos queiram."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_4","consent_forward","social"],"weight":1.0},{"id":"L4C002","category":"chaos","level":4,"intensity":70,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve escolher entre abraço, beijo consensual ou uma peça de roupa a menos; B pode vetar qualquer opção."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_4","consent_forward","social"],"weight":1.0},{"id":"L4C003","category":"chaos","level":4,"intensity":71,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem permanecer próximos por 30 segundos e cada um dizer o que mais gostou na interação com o outro."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_4","consent_forward","social"],"weight":1.0},{"id":"L5P001","category":"proximity","level":5,"intensity":79,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve permanecer abraçado a B por 40 segundos, ajustando a posição para que ambos fiquem confortáveis."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5P002","category":"proximity","level":5,"intensity":80,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem ficar muito próximos por 40 segundos; podem conversar, manter silêncio ou se beijar se houver vontade mútua."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5P003","category":"proximity","level":5,"intensity":81,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve escolher uma carícia não íntima — rosto, cabelo, ombros ou costas — e mantê-la por 20 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5P004","category":"proximity","level":5,"intensity":82,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem escolher juntos a forma de proximidade física não explícita que mais gostaram nesta partida e repeti-la."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5P005","category":"proximity","level":5,"intensity":83,"temperatureDelta":2,"tensionDelta":5,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"Com consentimento de B, A deve envolver B pela cintura e permanecer assim enquanto diz o que mais o atrai nele."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","proximity","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K001","category":"kiss","level":5,"intensity":81,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se quer um beijo demorado. Se houver sim mútuo, continuem somente enquanto ambos quiserem."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K002","category":"kiss","level":5,"intensity":82,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve dizer a B por que gostaria de beijá-lo e então perguntar se ele quer o beijo."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K003","category":"kiss","level":5,"intensity":83,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem escolher juntos entre um beijo demorado ou uma sequência de dois beijos breves."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K004","category":"kiss","level":5,"intensity":84,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve convidar B para repetir o beijo de que mais gostaram nesta partida; B pode adaptar ou recusar."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K005","category":"kiss","level":5,"intensity":85,"temperatureDelta":2,"tensionDelta":5,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B como prefere ser beijado e, se ambos quiserem, realizar uma versão breve dessa preferência."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K006","category":"kiss","level":5,"intensity":86,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B devem manter contato visual e decidir juntos quem inicia um beijo consensual."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K007","category":"kiss","level":5,"intensity":87,"temperatureDelta":3,"tensionDelta":4,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se quer um beijo seguido de um abraço de 30 segundos."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K008","category":"kiss","level":5,"intensity":88,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve oferecer a B duas opções: beijo consensual ou proximidade silenciosa por 40 segundos. B escolhe."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K009","category":"kiss","level":5,"intensity":89,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B podem trocar um beijo consensual e permanecer próximos até a próxima rodada."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5K010","category":"kiss","level":5,"intensity":90,"temperatureDelta":2,"tensionDelta":5,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B se quer transformar este desafio em um beijo; se não, os dois fazem um abraço demorado."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","kiss","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5U001","category":"undress","level":5,"intensity":83,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar voluntariamente uma peça de roupa e escolher uma interação de proximidade com B."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5U002","category":"undress","level":5,"intensity":84,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar voluntariamente uma peça e permanecer abraçado a B por 30 segundos, se ambos quiserem."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5U003","category":"undress","level":5,"intensity":85,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode escolher ficar com uma peça a menos pelas próximas três rodadas; depois faz um elogio a B."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5U004","category":"undress","level":5,"intensity":86,"temperatureDelta":2,"tensionDelta":3,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode escolher entre retirar uma peça de roupa ou repetir uma interação física não explícita com B."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5U005","category":"undress","level":5,"intensity":87,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A pode retirar voluntariamente uma peça e perguntar a B qual interação entre eles mais gostou nesta partida."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","undress","level_5","consent_forward","physical"],"weight":1.0},{"id":"L5C001","category":"chaos","level":5,"intensity":85,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":20,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B escolhem juntos uma interação física não explícita já feita por qualquer dupla e adaptam para os dois."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_5","consent_forward","social"],"weight":1.0},{"id":"L5C002","category":"chaos","level":5,"intensity":86,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":25,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve perguntar a B qual interação gostaria de prolongar por mais 30 segundos e realizá-la apenas se ambos quiserem."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_5","consent_forward","social"],"weight":1.0},{"id":"L5C003","category":"chaos","level":5,"intensity":87,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":30,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A e B podem combinar abraço, beijo consensual e proximidade em uma sequência curta definida pelos dois."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_5","consent_forward","social"],"weight":1.0},{"id":"L5C004","category":"chaos","level":5,"intensity":88,"temperatureDelta":2,"tensionDelta":4,"durationSeconds":15,"participantCount":2,"roles":{"actor":"A","target":"B"},"text":{"ptBR":"A deve oferecer a B três opções — abraço, beijo consensual ou proximidade silenciosa — e B escolhe uma."},"requirements":{"minPlayers":4},"effects":{"clothing":null,"power":null},"tags":["directed","chaos","level_5","consent_forward","social"],"weight":1.0}];
-const CONFIG={pairCooldown4:2,pairCooldown6:3,cardCooldown:14,offeredCards:3,randomMin:.78,randomMax:1.22};let CARDS=[],G=null;const $=id=>document.getElementById(id);const show=id=>{document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));$(id).classList.add('active')};
-function rand(){G.seed=(G.seed*1664525+1013904223)>>>0;return G.seed/4294967296}function rb(a,b){return a+rand()*(b-a)}function weighted(items,fn){let ws=items.map(x=>Math.max(.001,fn(x))),t=ws.reduce((a,b)=>a+b,0),r=rand()*t;for(let i=0;i<items.length;i++){r-=ws[i];if(r<=0)return items[i]}return items.at(-1)}function pairKey(a,b){return[a.id,b.id].sort().join('_')}
-function progressionScore(){const hi=Math.max(G.temperature,G.tension),lo=Math.min(G.temperature,G.tension);return Math.min(100,.48*G.temperature+.42*G.tension+.10*lo+(hi-lo>=18?5:0))}
-function effectiveLevel(){let s=progressionScore(),l=s<18?1:s<36?2:s<54?3:s<72?4:5;/* salto de fase: um índice muito adiantado puxa o baralho */if(Math.max(G.temperature,G.tension)>=48&&l<3)l=3;if(Math.min(G.temperature,G.tension)>=58&&l<4)l=4;if(Math.min(G.temperature,G.tension)>=74)l=5;return l}
-function buildInputs(){let n=+$('count').value,b=$('nameInputs');b.innerHTML='';for(let i=0;i<n;i++){let d=document.createElement('div');d.innerHTML=`<input id="n${i}" maxlength="18" placeholder="Jogador ${String.fromCharCode(65+i)}">`;b.appendChild(d)}}$('count').onchange=buildInputs;buildInputs();
-function createGame(){if(!$('adultCheck').checked){alert('Confirme que todos são adultos e participam voluntariamente.');return}let n=+$('count').value;G={version:'0.4.0',seed:(Date.now()^Math.floor(Math.random()*1e9))>>>0,round:0,temperature:4,tension:4,players:[],pairs:{},usedCards:[],history:[],selectorIndex:0,lastActor:null,current:null};for(let i=0;i<n;i++)G.players.push({id:'P'+i,name:$('n'+i).value.trim()||String.fromCharCode(65+i),activeTurns:0,targetedTurns:0});for(let a of G.players)for(let b of G.players)if(a.id<b.id)G.pairs[pairKey(a,b)]={total:0,lastRound:-99,dir:{[a.id+'>'+b.id]:0,[b.id+'>'+a.id]:0}};save();show('game');nextRound()}
-function selectActor(){let ps=G.players,min=Math.min(...ps.map(p=>p.activeTurns));let pool=ps.filter(p=>p.id!==G.lastActor||ps.length<3);return weighted(pool,p=>(1+Math.max(0,min-p.activeTurns+1))*rb(CONFIG.randomMin,CONFIG.randomMax))}
-function selectTarget(a){let cand=G.players.filter(p=>p.id!==a.id),cool=G.players.length===4?CONFIG.pairCooldown4:CONFIG.pairCooldown6;let unseen=cand.filter(p=>G.pairs[pairKey(a,p)].total===0);if(unseen.length)return weighted(unseen,p=>1+Math.max(0,2-p.targetedTurns)*.5+rb(.7,1.3));let avail=cand.filter(p=>G.round-G.pairs[pairKey(a,p)].lastRound>cool);if(!avail.length)avail=cand;let minT=Math.min(...G.players.map(p=>p.targetedTurns));return weighted(avail,p=>{let s=G.pairs[pairKey(a,p)],dir=s.dir[a.id+'>'+p.id]||0,rev=s.dir[p.id+'>'+a.id]||0,rec=Math.min(6,G.round-s.lastRound),rep=1/(1+.7*s.total*s.total),fair=1+Math.max(0,minT-p.targetedTurns+1),direction=1+Math.max(0,rev-dir)*.7;return (1+rec*.25)*rep*fair*direction*rb(CONFIG.randomMin,CONFIG.randomMax)})}
-function recentlyUsed(id){return G.usedCards.slice(-CONFIG.cardCooldown).includes(id)}function categoryWeight(c,l){let physical=['proximity','kiss','undress'].includes(c.category)?2.1:1;let tensionGap=G.tension-G.temperature,tempGap=G.temperature-G.tension;if(tensionGap>12&&['proximity','kiss','undress'].includes(c.category))physical*=1.4;if(tempGap>12&&['confession','flirt','chaos'].includes(c.category))physical*=1.25;if(c.level===l)physical*=1.7;else if(c.level===l-1)physical*=1.05;else physical*=.55;return physical*c.weight}
-function eligibleCards(){let l=effectiveLevel();let pool=CARDS.filter(c=>c.level<=l&&!recentlyUsed(c.id));if(pool.length<12)pool=CARDS.filter(c=>c.level<=l);return pool}function chooseCards(){let l=effectiveLevel(),pool=[...eligibleCards()],out=[];while(out.length<3&&pool.length){let c=weighted(pool,x=>categoryWeight(x,l)/(out.some(o=>o.category===x.category)?2.4:1)*rb(.85,1.15));out.push(c);pool=pool.filter(x=>x.id!==c.id)}return out}
-function cardText(c){return c.text.ptBR.replaceAll('A',G.current.actor.name).replaceAll('B',G.current.target.name)}function icon(c){return({flirt:'😏',confession:'🧠',proximity:'🤝',kiss:'💋',undress:'👕',chaos:'🎲'})[c]||'🎴'}function label(c){return({flirt:'Flerte',confession:'Confissão',proximity:'Contato',kiss:'Beijo',undress:'Desafio',chaos:'Caos'})[c]||c}function intensityWord(i){return i<35?'leve':i<55?'média':i<75?'alta':'intensa'}
-function nextRound(){G.round++;let actor=selectActor(),target=selectTarget(actor),selector=G.players[G.selectorIndex%G.players.length],cards=chooseCards();actor.activeTurns++;G.lastActor=actor.id;G.current={actor,target,selector,cards,selected:null};$('actor').textContent=actor.name;$('target').textContent=target.name;$('selector').textContent=selector.name;$('roundLabel').textContent='Rodada '+G.round;$('resolution').classList.add('hidden');$('options').innerHTML='';cards.forEach((c,i)=>{let b=document.createElement('button');b.className='option';b.innerHTML=`<span>${icon(c.category)}</span><b>${i+1} · ${label(c.category)}</b><small>${intensityWord(c.intensity)}</small>`;b.onclick=()=>selectCard(c);$('options').appendChild(b)});save()}
-function selectCard(c){G.current.selected=c;$('rCategory').textContent=icon(c.category)+' '+label(c.category);$('rText').textContent=cardText(c);$('resolution').classList.remove('hidden');$('resolution').scrollIntoView({behavior:'smooth',block:'nearest'})}
-function resolve(ok){let c=G.current.selected,a=G.current.actor,t=G.current.target,s=G.pairs[pairKey(a,t)];if(!c)return;s.total++;s.lastRound=G.round;s.dir[a.id+'>'+t.id]=(s.dir[a.id+'>'+t.id]||0)+1;t.targetedTurns++;if(ok){G.temperature=Math.min(100,G.temperature+c.temperatureDelta);G.tension=Math.min(100,G.tension+c.tensionDelta)}else G.tension=Math.min(100,G.tension+1);G.usedCards.push(c.id);G.history.push({r:G.round,a:a.id,t:t.id,c:c.id,ok,temperature:G.temperature,tension:G.tension,level:effectiveLevel()});G.selectorIndex=(G.selectorIndex+1)%G.players.length;save();nextRound()}
-function save(){if(G)localStorage.setItem('calor_game_v04',JSON.stringify(G))}function endGame(){show('end');save()}$('startBtn').onclick=createGame;$('acceptBtn').onclick=()=>resolve(true);$('declineBtn').onclick=()=>resolve(false);$('pauseBtn').onclick=()=>show('pause');$('resumeBtn').onclick=()=>show('game');$('endBtn').onclick=()=>{if(confirm('Encerrar a partida?'))endGame()};$('pauseEndBtn').onclick=()=>{if(confirm('Encerrar a partida?'))endGame()};$('newBtn').onclick=()=>{localStorage.removeItem('calor_game_v04');location.reload()};$('rulesBtn').onclick=()=>alert('REGRAS\n\n• Todos devem ser adultos.\n• O algoritmo define quem interage com quem.\n• As três cartas mostram apenas categoria e intensidade; o conteúdo aparece só depois da escolha.\n• Passar é sempre permitido.\n• Contato físico exige consentimento.\n• Não há placar visível.\n• A partida não termina automaticamente: o grupo decide quando encerrar.\n• Temperatura e Tensão são internas e podem fazer o jogo avançar mais rápido para fases superiores.');
-(async()=>{try{let r=await fetch('./cards.json',{cache:'no-store'});if(!r.ok)throw 0;CARDS=await r.json()}catch(e){CARDS=EMBEDDED_CARDS}})();</script><script>if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js'));</script></body></html>
+*{box-sizing:border-box}
+:root{
+ --bg:#0d0812;
+ --panel:#17101f;
+ --panel2:#21152c;
+ --text:#f7effb;
+ --muted:#b8a9c1;
+ --accent:#ff4d7d;
+ --accent2:#b55cff;
+ --gold:#ffcc70;
+ --green:#65d6a6;
+ --border:#392643;
+}
+html,body{
+ margin:0;
+ min-height:100%;
+ background:
+ radial-gradient(circle at 20% 0%,#301337 0,transparent 35%),
+ radial-gradient(circle at 100% 20%,#341020 0,transparent 35%),
+ var(--bg);
+ color:var(--text);
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+body{
+ padding:
+ max(12px,env(safe-area-inset-top))
+ 12px
+ max(18px,env(safe-area-inset-bottom));
+}
+button,input,select{font:inherit}
+button{
+ border:0;
+ border-radius:13px;
+ padding:12px 14px;
+ font-weight:800;
+ color:white;
+ background:linear-gradient(135deg,var(--accent),#9c45ff);
+ cursor:pointer;
+}
+button.secondary{
+ background:#2b1d35;
+ border:1px solid var(--border);
+}
+button.ghost{
+ background:transparent;
+ border:1px solid var(--border);
+}
+button:disabled{
+ opacity:.45;
+}
+.wrap{
+ max-width:720px;
+ margin:auto;
+}
+.logo{
+ text-align:center;
+ font-size:29px;
+ font-weight:950;
+ letter-spacing:.13em;
+ margin:8px 0 3px;
+}
+.logo span{color:#ff537f}
+.subtitle{
+ text-align:center;
+ color:var(--muted);
+ font-size:12px;
+ margin-bottom:14px;
+}
+.screen{display:none}
+.screen.active{display:block}
+.panel{
+ background:rgba(23,16,31,.94);
+ border:1px solid var(--border);
+ border-radius:19px;
+ padding:15px;
+ box-shadow:0 15px 40px #0005;
+ margin-bottom:11px;
+}
+h1,h2,h3,p{margin-top:0}
+h2{font-size:18px}
+.small{
+ font-size:12px;
+ color:var(--muted);
+}
+.field{margin:12px 0}
+label{
+ display:block;
+ font-size:12px;
+ color:var(--muted);
+ margin-bottom:5px;
+}
+input,select{
+ width:100%;
+ padding:12px;
+ border-radius:12px;
+ border:1px solid var(--border);
+ background:#110b17;
+ color:white;
+ outline:none;
+}
+.playerGrid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:8px;
+}
+.consent{
+ display:flex;
+ gap:9px;
+ align-items:flex-start;
+ margin:13px 0;
+ font-size:12px;
+ color:#d9ccdf;
+}
+.consent input{
+ width:auto;
+ margin-top:2px;
+}
+.full{width:100%}
+.topbar{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:8px;
+ margin-bottom:8px;
+}
+.meter{
+ background:#17101f;
+ border:1px solid var(--border);
+ border-radius:14px;
+ padding:8px 10px;
+}
+.meterHead{
+ display:flex;
+ justify-content:space-between;
+ font-size:11px;
+ margin-bottom:5px;
+}
+.track{
+ height:5px;
+ border-radius:9px;
+ background:#302139;
+ overflow:hidden;
+}
+.fill{
+ height:100%;
+ border-radius:9px;
+ background:linear-gradient(90deg,#ff4d7d,#ff9966);
+ transition:width .4s ease;
+}
+.tensionFill{
+ background:linear-gradient(90deg,#8c5cff,#d95cff);
+}
+.phaseBar{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ background:#21152c;
+ border:1px solid #493156;
+ border-radius:13px;
+ padding:8px 11px;
+ margin-bottom:9px;
+}
+.phaseLabel{
+ font-size:10px;
+ color:var(--gold);
+ font-weight:900;
+ letter-spacing:.08em;
+}
+.phaseName{
+ font-size:13px;
+ font-weight:900;
+}
+.round{
+ font-size:10px;
+ color:var(--muted);
+}
+.route{
+ text-align:center;
+ background:#130d19;
+ border:1px solid var(--border);
+ border-radius:15px;
+ padding:10px;
+ margin-bottom:9px;
+}
+.route .names{
+ font-size:19px;
+ font-weight:950;
+}
+.arrow{
+ color:var(--accent);
+ margin:0 7px;
+}
+.selector{
+ font-size:11px;
+ color:var(--gold);
+ margin-top:3px;
+}
+.powerNotice{
+ border:1px solid #805c27;
+ background:#2a1d13;
+ border-radius:14px;
+ padding:10px;
+ margin-bottom:9px;
+}
+.powerNotice strong{color:#ffd681}
+.powerButtons{
+ display:flex;
+ flex-wrap:wrap;
+ gap:6px;
+ margin-top:8px;
+}
+.powerButtons button{
+ padding:8px 10px;
+ font-size:11px;
+ background:#50391b;
+ border:1px solid #87642d;
+}
+.offerTitle{
+ text-align:center;
+ font-size:11px;
+ color:var(--muted);
+ margin:7px 0;
+}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:6px;
+}
+.cardChoice{
+ min-height:75px;
+ padding:9px 5px;
+ background:#1b1222;
+ border:1px solid #422c4d;
+ border-radius:13px;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ cursor:pointer;
+}
+.cardChoice .emoji{
+ font-size:20px;
+ margin-bottom:3px;
+}
+.cardChoice .cat{
+ font-size:10px;
+ font-weight:900;
+}
+.cardChoice .intensity{
+ font-size:9px;
+ color:var(--muted);
+ margin-top:3px;
+}
+.mission{
+ text-align:center;
+ padding:14px;
+ background:
+ radial-gradient(circle at top,#35152d,transparent 70%),
+ #18101f;
+ border:1px solid #5a304e;
+ border-radius:17px;
+ margin-top:8px;
+}
+.missionCat{
+ color:var(--gold);
+ font-size:10px;
+ font-weight:900;
+ letter-spacing:.08em;
+ margin-bottom:8px;
+}
+.missionText{
+ font-size:18px;
+ line-height:1.35;
+ font-weight:850;
+}
+.actions{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:7px;
+ margin-top:10px;
+}
+.pass{
+ background:#28202e;
+ border:1px solid #55455d;
+}
+.inventory{
+ padding:10px 12px;
+}
+.inventoryTitle{
+ font-size:10px;
+ color:var(--muted);
+ font-weight:900;
+ letter-spacing:.08em;
+ margin-bottom:7px;
+}
+.invRows{
+ display:flex;
+ flex-direction:column;
+ gap:5px;
+}
+.invRow{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ font-size:11px;
+ padding:5px 7px;
+ background:#120c18;
+ border-radius:9px;
+}
+.powerChips{
+ display:flex;
+ gap:4px;
+ flex-wrap:wrap;
+ justify-content:flex-end;
+}
+.chip{
+ background:#382544;
+ border:1px solid #5c3e6b;
+ padding:3px 6px;
+ border-radius:20px;
+ font-size:9px;
+ color:#e9d7ef;
+}
+.noPower{
+ color:#67596d;
+ font-size:9px;
+}
+.footerActions{
+ display:flex;
+ justify-content:center;
+ gap:7px;
+ margin-top:10px;
+}
+.footerActions button{
+ font-size:10px;
+ padding:8px 11px;
+}
+.overlay{
+ position:fixed;
+ inset:0;
+ z-index:50;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:20px;
+ background:#08050bea;
+ backdrop-filter:blur(8px);
+}
+.overlay.hidden{display:none}
+.overlayBox{
+ width:min(430px,100%);
+ text-align:center;
+ background:#1b1122;
+ border:1px solid #633b61;
+ border-radius:23px;
+ padding:25px 19px;
+ box-shadow:0 30px 80px #000a;
+}
+.phaseBig{
+ font-size:12px;
+ color:var(--gold);
+ font-weight:950;
+ letter-spacing:.15em;
+}
+.overlayBox h2{
+ font-size:28px;
+ margin:8px 0;
+}
+.overlayBox p{
+ color:#d4c3da;
+ line-height:1.5;
+ font-size:13px;
+}
+.toast{
+ position:fixed;
+ left:50%;
+ bottom:calc(20px + env(safe-area-inset-bottom));
+ transform:translateX(-50%);
+ z-index:80;
+ background:#27172e;
+ border:1px solid #70436f;
+ padding:10px 15px;
+ border-radius:20px;
+ font-size:11px;
+ box-shadow:0 10px 30px #0008;
+}
+.hidden{display:none!important}
+@media(max-width:430px){
+ body{padding-left:8px;padding-right:8px}
+ .panel{padding:11px}
+ .logo{font-size:24px}
+ .missionText{font-size:17px}
+ .cardChoice{min-height:69px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<div class="logo">C<span>A</span>LOR</div>
+<div class="subtitle">tensão • química • caos</div>
+
+<section id="setup" class="screen active">
+ <div class="panel">
+  <h2>Nova partida</h2>
+
+  <div class="field">
+   <label>Número de jogadores</label>
+   <select id="playerCount">
+    <option value="4">4 jogadores</option>
+    <option value="6">6 jogadores</option>
+   </select>
+  </div>
+
+  <div id="playerInputs" class="playerGrid"></div>
+
+  <div class="field">
+   <label>Temperatura inicial</label>
+   <select id="startTemp">
+    <option value="5">🌱 Começar leve</option>
+    <option value="15">😏 Já existe química</option>
+    <option value="25">🔥 Começar mais quente</option>
+   </select>
+  </div>
+
+  <label class="consent">
+   <input type="checkbox" id="adultCheck">
+   <span>
+    Todos são adultos e estão participando voluntariamente.
+    Qualquer jogador pode passar, pausar ou encerrar sua participação a qualquer momento.
+   </span>
+  </label>
+
+  <button id="startBtn" class="full">COMEÇAR</button>
+ </div>
+</section>
+
+<section id="game" class="screen">
+
+ <div class="topbar">
+  <div class="meter">
+   <div class="meterHead">
+    <span>🔥 TEMPERATURA</span>
+    <strong id="tempValue">0</strong>
+   </div>
+   <div class="track">
+    <div id="tempFill" class="fill"></div>
+   </div>
+  </div>
+
+  <div class="meter">
+   <div class="meterHead">
+    <span>🌀 TENSÃO</span>
+    <strong id="tensionValue">0</strong>
+   </div>
+   <div class="track">
+    <div id="tensionFill" class="fill tensionFill"></div>
+   </div>
+  </div>
+ </div>
+
+ <div class="phaseBar">
+  <div>
+   <div id="phaseLabel" class="phaseLabel">FASE 1 / 5</div>
+   <div id="phaseName" class="phaseName">🌱 Aquecimento</div>
+  </div>
+  <div id="roundLabel" class="round">RODADA 1</div>
+ </div>
+
+ <div class="route">
+  <div class="names">
+   <span id="actorName">—</span>
+   <span class="arrow">→</span>
+   <span id="targetName">—</span>
+  </div>
+  <div id="selectorName" class="selector"></div>
+ </div>
+
+ <div id="passivePower" class="powerNotice hidden">
+  <strong id="passivePowerTitle">⚡ Você pode usar um poder</strong>
+  <div class="small" id="passivePowerText"></div>
+  <div id="passivePowerButtons" class="powerButtons"></div>
+ </div>
+
+ <div id="offerArea">
+  <div class="offerTitle">
+   Escolha uma carta. A missão só será revelada depois.
+  </div>
+  <div id="cards" class="cards"></div>
+ </div>
+
+ <div id="missionArea" class="mission hidden">
+  <div id="missionCat" class="missionCat"></div>
+  <div id="missionText" class="missionText"></div>
+
+  <div class="actions">
+   <button id="acceptBtn">FEITO 🔥</button>
+   <button id="passBtn" class="pass">PASSAR</button>
+  </div>
+ </div>
+
+ <div class="panel inventory">
+  <div class="inventoryTitle">⚡ PODERES</div>
+  <div id="inventory" class="invRows"></div>
+ </div>
+
+ <div class="footerActions">
+  <button id="rulesBtn" class="ghost">REGRAS</button>
+  <button id="pauseBtn" class="ghost">PAUSAR</button>
+  <button id="endBtn" class="ghost">ENCERRAR</button>
+ </div>
+
+</section>
+
+</div>
+
+<div id="phaseOverlay" class="overlay hidden">
+ <div class="overlayBox">
+  <div id="phaseOverlayLabel" class="phaseBig">NOVA FASE</div>
+  <h2 id="phaseOverlayName"></h2>
+  <p id="phaseOverlayText"></p>
+  <button id="phaseContinue" style="width:100%">
+   ENTRAR NA NOVA FASE
+  </button>
+ </div>
+</div>
+
+<div id="powerOverlay" class="overlay hidden">
+ <div class="overlayBox">
+  <div class="phaseBig">⚡ NOVO PODER</div>
+  <h2 id="powerWinner"></h2>
+  <p id="powerAwardText"></p>
+  <button id="powerContinue" style="width:100%">
+   CONTINUAR
+  </button>
+ </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script>
+
+let CARDS=[];
+let G=null;
+
+const $=id=>document.getElementById(id);
+
+const PHASES=[
+ {level:1,name:"🌱 Aquecimento"},
+ {level:2,name:"😏 Química"},
+ {level:3,name:"🔥 Desejo"},
+ {level:4,name:"🫦 Intimidade"},
+ {level:5,name:"🌙 Madrugada"}
+];
+
+const CATEGORY={
+ flirt:["😏","Flerte"],
+ confession:["🧠","Confissão"],
+ proximity:["🤝","Contato"],
+ kiss:["💋","Beijo"],
+ undress:["👕","Desafio"],
+ chaos:["🎲","Caos"]
+};
+
+const POWERS={
+ SWAP:{
+  name:"↻ Troca",
+  description:"Troque a missão atual por outra."
+ },
+ REVERSE:{
+  name:"⇄ Inversão",
+  description:"Inverta quem é ativo e quem é passivo nesta missão."
+ },
+ REDIRECT:{
+  name:"↗ Desvio",
+  description:"Faça o jogo escolher outro alvo."
+ }
+};
+
+const show=id=>{
+ document.querySelectorAll(".screen")
+  .forEach(x=>x.classList.remove("active"));
+ $(id).classList.add("active");
+};
+
+function toast(text){
+ const el=$("toast");
+ el.textContent=text;
+ el.classList.remove("hidden");
+
+ clearTimeout(window.toastTimer);
+
+ window.toastTimer=setTimeout(()=>{
+  el.classList.add("hidden");
+ },2200);
+}
+
+function clamp(v,min=0,max=100){
+ return Math.max(min,Math.min(max,v));
+}
+
+function rand(){
+ G.seed=(G.seed*1664525+1013904223)>>>0;
+ return G.seed/4294967296;
+}
+
+function weighted(items,weightFn){
+ const weights=items.map(x=>Math.max(.001,weightFn(x)));
+ const total=weights.reduce((a,b)=>a+b,0);
+
+ let r=rand()*total;
+
+ for(let i=0;i<items.length;i++){
+  r-=weights[i];
+  if(r<=0)return items[i];
+ }
+
+ return items[items.length-1];
+}
+
+function pairKey(a,b){
+ return [a.id,b.id].sort().join("_");
+}
+
+function pairStats(a,b){
+ const key=pairKey(a,b);
+
+ if(!G.pairs[key]){
+  G.pairs[key]={
+   total:0,
+   lastRound:-999,
+   directions:{}
+  };
+ }
+
+ return G.pairs[key];
+}
+
+function directionKey(a,b){
+ return a.id+">"+b.id;
+}
+
+function setupPlayerInputs(){
+ const n=+$("playerCount").value;
+ const box=$("playerInputs");
+
+ box.innerHTML="";
+
+ for(let i=0;i<n;i++){
+  const input=document.createElement("input");
+  input.placeholder="Jogador "+(i+1);
+  input.id="p"+i;
+  input.value="";
+  box.appendChild(input);
+ }
+}
+
+$("playerCount").addEventListener("change",setupPlayerInputs);
+setupPlayerInputs();
+
+function createGame(){
+ const n=+$("playerCount").value;
+ const players=[];
+
+ for(let i=0;i<n;i++){
+  const name=$("p"+i).value.trim() || "Jogador "+(i+1);
+
+  players.push({
+   id:"P"+(i+1),
+   name,
+   activeTurns:0,
+   targetedTurns:0,
+   accepted:0,
+   declined:0,
+   powers:[]
+  });
+ }
+
+ return {
+  version:"0.5.0",
+  seed:(Date.now()>>>0),
+  round:1,
+  temperature:+$("startTemp").value,
+  tension:5,
+  level:1,
+  previousLevel:1,
+  players,
+  pairs:{},
+  usedCards:[],
+  recentPairs:[],
+  current:null,
+  selectorIndex:0,
+  paused:false
+ };
+}
+
+function startGame(){
+ if(!$("adultCheck").checked){
+  alert("Confirme que todos são adultos e estão participando voluntariamente.");
+  return;
+ }
+
+ if(!CARDS.length){
+  alert("O baralho ainda não foi carregado.");
+  return;
+ }
+
+ G=createGame();
+ saveGame();
+ show("game");
+ updateUI();
+ nextRound();
+}
+
+$("startBtn").addEventListener("click",startGame);
+
+function determineLevel(){
+ const t=G.temperature;
+ const s=G.tension;
+
+ let level=1;
+
+ const combined=(t+s)/2;
+
+ if(combined>=20 || (t>=25&&s>=15)) level=2;
+ if(combined>=38 || (t>=45&&s>=28)) level=3;
+ if(combined>=58 || (t>=65&&s>=45)) level=4;
+ if(combined>=78 || (t>=82&&s>=65)) level=5;
+
+ if(t>=70&&s>=70)level=Math.max(level,4);
+ if(t>=88&&s>=80)level=5;
+
+ return clamp(level,1,5);
+}
+
+function updatePhase(){
+ const old=G.level;
+ const next=determineLevel();
+
+ G.previousLevel=old;
+ G.level=next;
+
+ if(next>old){
+  showPhaseTransition(old,next);
+ }
+}
+
+function showPhaseTransition(oldLevel,newLevel){
+ const phase=PHASES[newLevel-1];
+
+ $("phaseOverlayLabel").textContent=
+  newLevel-oldLevel>1
+   ? "🔥 O JOGO PULOU UMA ETAPA"
+   : "🔥 NOVA FASE";
+
+ $("phaseOverlayName").textContent=phase.name;
+
+ let text="Temperatura e Tensão levaram o jogo para a Fase "+newLevel+".";
+
+ if(newLevel===2)
+  text+=" A química começa a sair da conversa e aparecer no corpo.";
+
+ if(newLevel===3)
+  text+=" As interações passam a ser mais físicas e podem continuar além de uma única rodada.";
+
+ if(newLevel===4)
+  text+=" O jogo entra em uma zona de maior proximidade, provocação e continuidade.";
+
+ if(newLevel===5)
+  text+=" O jogo chegou à intensidade máxima. A partir daqui, a dinâmica do grupo é mais importante que acelerar os índices.";
+
+ $("phaseOverlayText").textContent=text;
+ $("phaseOverlay").classList.remove("hidden");
+}
+
+$("phaseContinue").addEventListener("click",()=>{
+ $("phaseOverlay").classList.add("hidden");
+ updateUI();
+});
+
+function actorScore(p){
+ const min=Math.min(...G.players.map(x=>x.activeTurns));
+ return 1+(min-p.activeTurns+2)*2;
+}
+
+function selectActor(){
+ return weighted(G.players,actorScore);
+}
+
+function targetScore(actor,target){
+ if(actor.id===target.id)return 0;
+
+ const pair=pairStats(actor,target);
+
+ let score=1;
+
+ score*=1/(1+pair.total*pair.total);
+
+ const roundsSince=G.round-pair.lastRound;
+
+ if(roundsSince<=2)score*=.03;
+ else if(roundsSince===3)score*=.15;
+ else if(roundsSince===4)score*=.45;
+
+ const minTarget=Math.min(
+  ...G.players
+   .filter(p=>p.id!==actor.id)
+   .map(p=>p.targetedTurns)
+ );
+
+ if(target.targetedTurns===minTarget)score*=2;
+
+ const dir=directionKey(actor,target);
+ const reverse=directionKey(target,actor);
+
+ const dirCount=pair.directions[dir]||0;
+ const reverseCount=pair.directions[reverse]||0;
+
+ if(dirCount>reverseCount)score*=.55;
+ if(dirCount<reverseCount)score*=1.35;
+
+ return score;
+}
+
+function selectTarget(actor){
+ const candidates=G.players.filter(p=>p.id!==actor.id);
+ return weighted(candidates,p=>targetScore(actor,p));
+}
+
+function availableCards(){
+ let candidates=CARDS.filter(c=>
+  c.level<=G.level &&
+  (!c.requirements?.minPlayers ||
+   c.requirements.minPlayers<=G.players.length)
+ );
+
+ const recent=new Set(G.usedCards.slice(-10));
+
+ const fresh=candidates.filter(c=>!recent.has(c.id));
+
+ if(fresh.length>=3)candidates=fresh;
+
+ return candidates;
+}
+
+function chooseThreeCards(){
+ let pool=[...availableCards()];
+ const chosen=[];
+ const cats=new Set();
+
+ while(pool.length && chosen.length<3){
+  let candidates=pool.filter(c=>!cats.has(c.category));
+
+  if(!candidates.length)candidates=pool;
+
+  const c=weighted(candidates,x=>{
+   let w=x.weight||1;
+
+   if(x.level===G.level)w*=2.3;
+
+   if(G.level>=3 &&
+      ["proximity","kiss","undress"].includes(x.category)){
+    w*=1.8;
+   }
+
+   if(x.category==="confession" && G.level>=3){
+    w*=.35;
+   }
+
+   return w;
+  });
+
+  chosen.push(c);
+  cats.add(c.category);
+  pool=pool.filter(x=>x.id!==c.id);
+ }
+
+ return chosen;
+}
+
+function nextRound(){
+ if(!G || G.paused)return;
+
+ const actor=selectActor();
+ const target=selectTarget(actor);
+
+ actor.activeTurns++;
+ target.targetedTurns++;
+
+ const selector=
+  G.players[G.selectorIndex % G.players.length];
+
+ G.selectorIndex++;
+
+ G.current={
+  actorId:actor.id,
+  targetId:target.id,
+  selectorId:selector.id,
+  options:chooseThreeCards(),
+  selected:null
+ };
+
+ renderRound();
+ saveGame();
+}
+
+function getPlayer(id){
+ return G.players.find(p=>p.id===id);
+}
+
+function renderRound(){
+ const actor=getPlayer(G.current.actorId);
+ const target=getPlayer(G.current.targetId);
+ const selector=getPlayer(G.current.selectorId);
+
+ $("actorName").textContent=actor.name;
+ $("targetName").textContent=target.name;
+
+ $("selectorName").textContent=
+  selector.name+" escolhe a carta";
+
+ $("roundLabel").textContent=
+  "RODADA "+G.round;
+
+ renderChoices();
+ renderPassivePowers();
+ renderInventory();
+
+ $("missionArea").classList.add("hidden");
+ $("offerArea").classList.remove("hidden");
+
+ updateUI();
+}
+
+function intensityLabel(v){
+ if(v<25)return "leve";
+ if(v<50)return "média";
+ if(v<75)return "alta";
+ return "intensa";
+}
+
+function renderChoices(){
+ const box=$("cards");
+ box.innerHTML="";
+
+ G.current.options.forEach((card,index)=>{
+  const info=CATEGORY[card.category]||["🔥","Missão"];
+
+  const el=document.createElement("div");
+  el.className="cardChoice";
+
+  el.innerHTML=
+   '<div class="emoji">'+info[0]+'</div>'+
+   '<div class="cat">'+(index+1)+" · "+info[1]+'</div>'+
+   '<div class="intensity">'+
+   intensityLabel(card.intensity)+
+   "</div>";
+
+  el.onclick=()=>selectCard(index);
+
+  box.appendChild(el);
+ });
+}
+
+function selectCard(index){
+ const card=G.current.options[index];
+ G.current.selected=card;
+
+ const actor=getPlayer(G.current.actorId);
+ const target=getPlayer(G.current.targetId);
+
+ const info=CATEGORY[card.category]||["🔥","Missão"];
+
+ $("missionCat").textContent=
+  info[0]+" "+info[1]+" · FASE "+card.level;
+
+ let text=card.text.ptBR;
+
+ text=text
+  .replace(/\bA\b/g,actor.name)
+  .replace(/\bB\b/g,target.name);
+
+ $("missionText").textContent=text;
+
+ $("offerArea").classList.add("hidden");
+ $("missionArea").classList.remove("hidden");
+
+ renderPassivePowers();
+ saveGame();
+}
+
+function recordPair(){
+ const actor=getPlayer(G.current.actorId);
+ const target=getPlayer(G.current.targetId);
+
+ const pair=pairStats(actor,target);
+
+ pair.total++;
+ pair.lastRound=G.round;
+
+ const dir=directionKey(actor,target);
+ pair.directions[dir]=(pair.directions[dir]||0)+1;
+
+ G.recentPairs.push(pairKey(actor,target));
+
+ if(G.recentPairs.length>8)G.recentPairs.shift();
+}
+
+function resolveAccepted(){
+ if(!G.current.selected)return;
+
+ const card=G.current.selected;
+ const actor=getPlayer(G.current.actorId);
+
+ actor.accepted++;
+
+ G.temperature=clamp(
+  G.temperature+(card.temperatureDelta||1)
+ );
+
+ G.tension=clamp(
+  G.tension+(card.tensionDelta||1)
+ );
+
+ G.usedCards.push(card.id);
+
+ recordPair();
+
+ const oldLevel=G.level;
+
+ G.round++;
+
+ updatePhase();
+ saveGame();
+
+ if(G.level===oldLevel){
+  nextRound();
+ }
+}
+
+$("acceptBtn").addEventListener("click",resolveAccepted);
+
+function randomPower(){
+ const ids=Object.keys(POWERS);
+ return ids[Math.floor(rand()*ids.length)];
+}
+
+function awardPower(player){
+ const powerId=randomPower();
+
+ player.powers.push({
+  id:powerId,
+  earnedRound:G.round
+ });
+
+ $("powerWinner").textContent=
+  player.name+" ganhou "+POWERS[powerId].name;
+
+ $("powerAwardText").textContent=
+  POWERS[powerId].description+
+  " O poder ficará guardado até ser usado.";
+
+ $("powerOverlay").classList.remove("hidden");
+
+ renderInventory();
+ saveGame();
+}
+
+function resolvePass(){
+ if(!G.current.selected)return;
+
+ const actor=getPlayer(G.current.actorId);
+
+ actor.declined++;
+
+ G.tension=clamp(G.tension+2);
+
+ recordPair();
+
+ awardPower(actor);
+}
+
+$("passBtn").addEventListener("click",resolvePass);
+
+$("powerContinue").addEventListener("click",()=>{
+ $("powerOverlay").classList.add("hidden");
+
+ const oldLevel=G.level;
+
+ G.round++;
+ updatePhase();
+ saveGame();
+
+ if(G.level===oldLevel){
+  nextRound();
+ }
+});
+
+function renderPassivePowers(){
+ if(!G?.current)return;
+
+ const target=getPlayer(G.current.targetId);
+ const box=$("passivePower");
+
+ if(!target.powers.length){
+  box.classList.add("hidden");
+  return;
+ }
+
+ box.classList.remove("hidden");
+
+ $("passivePowerTitle").textContent=
+  "⚡ "+target.name+", você pode usar um poder";
+
+ $("passivePowerText").textContent=
+  "Você é o jogador passivo desta interação.";
+
+ const buttons=$("passivePowerButtons");
+ buttons.innerHTML="";
+
+ target.powers.forEach((power,index)=>{
+  const data=POWERS[power.id];
+
+  const btn=document.createElement("button");
+  btn.textContent=data.name;
+
+  btn.onclick=()=>usePower(target,index);
+
+  buttons.appendChild(btn);
+ });
+}
+
+function usePower(player,index){
+ const power=player.powers[index];
+
+ if(!power)return;
+
+ if(power.id==="SWAP"){
+  useSwap(player,index);
+  return;
+ }
+
+ if(power.id==="REVERSE"){
+  useReverse(player,index);
+  return;
+ }
+
+ if(power.id==="REDIRECT"){
+  useRedirect(player,index);
+  return;
+ }
+}
+
+function consumePower(player,index){
+ player.powers.splice(index,1);
+ renderInventory();
+ renderPassivePowers();
+ saveGame();
+}
+
+function useSwap(player,index){
+ const current=G.current.selected;
+
+ let pool=availableCards().filter(c=>
+  !current || c.id!==current.id
+ );
+
+ if(!pool.length)return;
+
+ const replacement=
+  pool[Math.floor(rand()*pool.length)];
+
+ G.current.selected=replacement;
+
+ consumePower(player,index);
+
+ if(!$("missionArea").classList.contains("hidden")){
+  const actor=getPlayer(G.current.actorId);
+  const target=getPlayer(G.current.targetId);
+  const info=CATEGORY[replacement.category]||["🔥","Missão"];
+
+  $("missionCat").textContent=
+   info[0]+" "+info[1]+" · FASE "+replacement.level;
+
+  $("missionText").textContent=
+   replacement.text.ptBR
+    .replace(/\bA\b/g,actor.name)
+    .replace(/\bB\b/g,target.name);
+ }
+
+ toast(player.name+" usou ↻ Troca");
+}
+
+function useReverse(player,index){
+ const oldActor=G.current.actorId;
+
+ G.current.actorId=G.current.targetId;
+ G.current.targetId=oldActor;
+
+ consumePower(player,index);
+
+ toast(player.name+" usou ⇄ Inversão");
+ renderRound();
+
+ if(G.current.selected){
+  const selected=G.current.selected;
+  G.current.selected=null;
+
+  const idx=G.current.options
+   .findIndex(c=>c.id===selected.id);
+
+  if(idx>=0)selectCard(idx);
+ }
+}
+
+function useRedirect(player,index){
+ const actor=getPlayer(G.current.actorId);
+
+ const oldTarget=G.current.targetId;
+
+ const candidates=G.players.filter(p=>
+  p.id!==actor.id &&
+  p.id!==oldTarget
+ );
+
+ if(!candidates.length)return;
+
+ const newTarget=weighted(
+  candidates,
+  p=>targetScore(actor,p)
+ );
+
+ G.current.targetId=newTarget.id;
+
+ consumePower(player,index);
+
+ toast(player.name+" usou ↗ Desvio");
+
+ renderRound();
+}
+
+function renderInventory(){
+ if(!G)return;
+
+ const box=$("inventory");
+ box.innerHTML="";
+
+ G.players.forEach(player=>{
+  const row=document.createElement("div");
+  row.className="invRow";
+
+  const name=document.createElement("strong");
+  name.textContent=player.name;
+
+  const powers=document.createElement("div");
+  powers.className="powerChips";
+
+  if(!player.powers.length){
+   powers.innerHTML='<span class="noPower">sem poderes</span>';
+  }else{
+   player.powers.forEach(p=>{
+    const chip=document.createElement("span");
+    chip.className="chip";
+    chip.textContent=POWERS[p.id]?.name||p.id;
+    powers.appendChild(chip);
+   });
+  }
+
+  row.appendChild(name);
+  row.appendChild(powers);
+
+  box.appendChild(row);
+ });
+}
+
+function updateUI(){
+ if(!G)return;
+
+ $("tempValue").textContent=Math.round(G.temperature);
+ $("tensionValue").textContent=Math.round(G.tension);
+
+ $("tempFill").style.width=
+  clamp(G.temperature)+"%";
+
+ $("tensionFill").style.width=
+  clamp(G.tension)+"%";
+
+ const phase=PHASES[G.level-1];
+
+ $("phaseLabel").textContent=
+  "FASE "+G.level+" / 5";
+
+ $("phaseName").textContent=
+  phase.name;
+
+ renderInventory();
+}
+
+function saveGame(){
+ if(!G)return;
+
+ try{
+  localStorage.setItem(
+   "calorGame",
+   JSON.stringify(G)
+  );
+ }catch(e){}
+}
+
+$("pauseBtn").addEventListener("click",()=>{
+ if(!G)return;
+
+ G.paused=!G.paused;
+
+ $("pauseBtn").textContent=
+  G.paused ? "RETOMAR" : "PAUSAR";
+
+ if(G.paused){
+  toast("Jogo pausado");
+ }else{
+  toast("Jogo retomado");
+ }
+
+ saveGame();
+});
+
+$("endBtn").addEventListener("click",()=>{
+ if(!G)return;
+
+ if(confirm("Encerrar esta partida?")){
+  localStorage.removeItem("calorGame");
+  G=null;
+  show("setup");
+ }
+});
+
+$("rulesBtn").addEventListener("click",()=>{
+ alert(
+`CALOR
+
+• Todos os participantes são adultos e entram voluntariamente no jogo.
+
+• O app define quem interage com quem.
+
+• Quem escolhe a carta não escolhe os participantes.
+
+• A carta só é revelada depois da escolha.
+
+• PASSAR está sempre disponível.
+
+• Se uma missão for passada, o jogador ativo recebe um poder.
+
+• Os poderes ficam guardados no inventário de cada jogador.
+
+• Quando alguém com poderes aparece como alvo/passivo, o app destaca que um poder pode ser usado.
+
+• ↻ TROCA substitui a missão atual.
+
+• ⇄ INVERSÃO troca o jogador ativo e o passivo.
+
+• ↗ DESVIO faz o algoritmo escolher outro alvo.
+
+• Temperatura e Tensão determinam a fase do jogo.
+
+• Os índices podem fazer o jogo avançar mais rapidamente e até pular uma etapa.
+
+• As fases mais avançadas aumentam a frequência e a continuidade das interações físicas.
+
+• Qualquer participante pode passar, pausar ou encerrar sua participação a qualquer momento.
+
+• A partida não termina automaticamente quando os índices chegam a 100. O grupo decide quando terminar.`
+ );
+});
+
+async function loadCards(){
+ try{
+  const response=await fetch(
+   "./cards.json",
+   {cache:"no-store"}
+  );
+
+  if(!response.ok){
+   throw new Error("cards.json");
+  }
+
+  const data=await response.json();
+
+  if(!Array.isArray(data) || !data.length){
+   throw new Error("Baralho vazio");
+  }
+
+  CARDS=data;
+
+ }catch(error){
+  console.error(error);
+
+  alert(
+   "Não foi possível carregar cards.json. "+
+   "Verifique se ele está na raiz do site junto com index.html."
+  );
+ }
+}
+
+loadCards();
+
+if("serviceWorker" in navigator){
+ window.addEventListener("load",()=>{
+  navigator.serviceWorker
+   .register("./service-worker.js")
+   .catch(console.error);
+ });
+}
+
+</script>
+
+</body>
+</html>
