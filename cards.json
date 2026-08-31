@@ -13,7 +13,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve encostar a palma da mão na palma de B por 15 segundos."
+      "ptBR": "A deve encostar a palma da mão na palma de B por 15 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -26,7 +26,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -58,7 +57,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -77,7 +75,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve tocar o antebraço de B enquanto faz um elogio sincero."
+      "ptBR": "A deve tocar o antebraço de B enquanto faz um elogio sincero."
     },
     "requirements": {
       "minPlayers": 4
@@ -90,7 +88,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -122,7 +119,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -141,7 +137,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve dar um abraço de 10 segundos em B."
+      "ptBR": "A deve dar um abraço de 10 segundos em B."
     },
     "requirements": {
       "minPlayers": 4
@@ -154,7 +150,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -186,7 +181,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -205,7 +199,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve segurar a mão de B por 20 segundos."
+      "ptBR": "A deve segurar a mão de B por 20 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -218,7 +212,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -250,7 +243,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -269,7 +261,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve apoiar uma mão no ombro de B durante 15 segundos."
+      "ptBR": "A deve apoiar uma mão no ombro de B durante 15 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -282,7 +274,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -314,7 +305,6 @@
       "directed",
       "proximity",
       "level_1",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -346,7 +336,6 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -378,7 +367,6 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -410,7 +398,6 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -429,7 +416,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve completar olhando para B: “uma coisa em você que chama atenção é...”"
+      "ptBR": "A deve completar olhando para B: “uma coisa em você que chama atenção é..”"
     },
     "requirements": {
       "minPlayers": 4
@@ -442,7 +429,6 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -474,7 +460,6 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -506,7 +491,6 @@
       "directed",
       "flirt",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -538,7 +522,6 @@
       "directed",
       "confession",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -570,7 +553,6 @@
       "directed",
       "confession",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -602,7 +584,6 @@
       "directed",
       "confession",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -634,13 +615,12 @@
       "directed",
       "confession",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1C001",
+    "id": "L1C001_2",
     "category": "chaos",
     "level": 1,
     "intensity": 13,
@@ -666,13 +646,12 @@
       "directed",
       "chaos",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1C002",
+    "id": "L1C002_2",
     "category": "chaos",
     "level": 1,
     "intensity": 14,
@@ -698,13 +677,12 @@
       "directed",
       "chaos",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1C003",
+    "id": "L1C003_2",
     "category": "chaos",
     "level": 1,
     "intensity": 15,
@@ -730,13 +708,12 @@
       "directed",
       "chaos",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L1C004",
+    "id": "L1C004_2",
     "category": "chaos",
     "level": 1,
     "intensity": 16,
@@ -749,7 +726,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B qual interação entre os dois gostaria de repetir mais tarde, se ambos quiserem."
+      "ptBR": "A deve dizer a B qual interação entre os dois gostaria de repetir mais tarde,"
     },
     "requirements": {
       "minPlayers": 4
@@ -762,7 +739,6 @@
       "directed",
       "chaos",
       "level_1",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -781,7 +757,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve abraçá-lo por 15 segundos e permanecer próximo depois."
+      "ptBR": "A deve abraçá-lo por 15 segundos e permanecer próximo depois."
     },
     "requirements": {
       "minPlayers": 4
@@ -794,7 +770,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -813,7 +788,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve segurar as duas mãos de B por 20 segundos."
+      "ptBR": "A deve segurar as duas mãos de B por 20 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -826,7 +801,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -858,7 +832,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -877,7 +850,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve tocar suavemente o rosto de B por alguns segundos e depois fazer um elogio."
+      "ptBR": "A deve tocar suavemente o rosto de B por alguns segundos e depois fazer um elogio."
     },
     "requirements": {
       "minPlayers": 4
@@ -890,7 +863,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -909,7 +881,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve apoiar a mão na cintura de B durante 15 segundos."
+      "ptBR": "A deve apoiar a mão na cintura de B durante 15 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -922,7 +894,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -954,7 +925,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -973,7 +943,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve fazer uma massagem breve nos ombros de B por 20 segundos."
+      "ptBR": "A deve fazer uma massagem breve nos ombros de B por 20 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -986,7 +956,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1018,7 +987,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1037,7 +1005,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve passar o braço pelos ombros de B e permanecer assim por 20 segundos."
+      "ptBR": "A deve passar o braço pelos ombros de B e permanecer assim por 20 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -1050,7 +1018,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1082,7 +1049,6 @@
       "directed",
       "proximity",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1101,7 +1067,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se ele aceita um beijo no rosto. Se ambos quiserem, A realiza o beijo."
+      "ptBR": "A deve dar em B um beijo no rosto."
     },
     "requirements": {
       "minPlayers": 4
@@ -1114,7 +1080,6 @@
       "directed",
       "kiss",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1146,7 +1111,6 @@
       "directed",
       "kiss",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1165,7 +1129,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem aproximar os rostos por alguns segundos. Se ambos quiserem um beijo, podem fazê-lo; caso contrário, apenas mantenham o olhar."
+      "ptBR": "A e B devem aproximar os rostos por alguns segundos; depois A dá em B um beijo no rosto."
     },
     "requirements": {
       "minPlayers": 4
@@ -1178,7 +1142,6 @@
       "directed",
       "kiss",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1210,7 +1173,6 @@
       "directed",
       "kiss",
       "level_2",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1242,7 +1204,6 @@
       "directed",
       "flirt",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -1274,7 +1235,6 @@
       "directed",
       "flirt",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -1306,7 +1266,6 @@
       "directed",
       "flirt",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -1338,7 +1297,6 @@
       "directed",
       "flirt",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -1370,7 +1328,6 @@
       "directed",
       "confession",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -1402,13 +1359,12 @@
       "directed",
       "confession",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L2C001",
+    "id": "L2C001_2",
     "category": "chaos",
     "level": 2,
     "intensity": 31,
@@ -1434,13 +1390,12 @@
       "directed",
       "chaos",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L2C002",
+    "id": "L2C002_2",
     "category": "chaos",
     "level": 2,
     "intensity": 32,
@@ -1466,7 +1421,6 @@
       "directed",
       "chaos",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -1498,7 +1452,6 @@
       "directed",
       "chaos",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -1530,7 +1483,6 @@
       "directed",
       "chaos",
       "level_2",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -1549,7 +1501,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve abraçar B pela cintura por 20 segundos."
+      "ptBR": "A deve permanecer abraçado à cintura de B até a próxima vez de A no jogo."
     },
     "requirements": {
       "minPlayers": 4
@@ -1562,7 +1514,6 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1581,7 +1532,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve sentar-se muito próximo de B, com as pernas encostadas, por uma rodada."
+      "ptBR": "A deve ficar colado a B, com as pernas encostadas, até a próxima vez de A no jogo."
     },
     "requirements": {
       "minPlayers": 4
@@ -1594,7 +1545,6 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1613,7 +1563,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve tocar suavemente a nuca ou o cabelo de B por alguns segundos."
+      "ptBR": "A deve manter uma carícia no cabelo, nuca, ombros ou costas de B até a próxima vez de A."
     },
     "requirements": {
       "minPlayers": 4
@@ -1626,7 +1576,6 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1645,7 +1594,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem permanecer frente a frente por 25 segundos; qualquer beijo depende de um “sim” dos dois."
+      "ptBR": "A deve manter contato físico contínuo com B até sua próxima vez no jogo; pode mudar a posição durante esse tempo."
     },
     "requirements": {
       "minPlayers": 4
@@ -1658,7 +1607,6 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1677,7 +1625,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve fazer uma massagem breve nas costas ou nos ombros de B."
+      "ptBR": "A deve fazer uma massagem em B por 45 segundos e depois permanecer encostado a B até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -1690,7 +1638,6 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1709,7 +1656,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve manter uma mão na cintura de B e contato visual por 15 segundos."
+      "ptBR": "A deve manter uma mão na cintura de B até a próxima vez de A no jogo."
     },
     "requirements": {
       "minPlayers": 4
@@ -1722,7 +1669,6 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1741,7 +1687,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve se aproximar de B e dizer em voz baixa o que acha mais atraente nele."
+      "ptBR": "A deve se aproximar de B, dizer em voz baixa o que mais o atrai e permanecer encostado a ele até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -1754,7 +1700,6 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1773,7 +1718,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve escolher entre abraço apertado, mãos entrelaçadas ou carícia no rosto e manter por 15 segundos."
+      "ptBR": "A escolhe entre abraço pela cintura, mãos entrelaçadas ou carícia no rosto e deve manter a interação até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -1786,7 +1731,6 @@
       "directed",
       "proximity",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1805,7 +1749,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar claramente a B se quer um beijo de até 10 segundos. Só façam se os dois disserem sim."
+      "ptBR": "A deve dar em B um beijo onde quiser e permanecer próximo dele até o fim da rodada."
     },
     "requirements": {
       "minPlayers": 4
@@ -1818,7 +1762,6 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1837,7 +1780,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se aceita um beijo. Se sim, B decide se será breve ou mais demorado."
+      "ptBR": "A deve dar em B um beijo onde quiser; B escolhe se será breve ou demorado."
     },
     "requirements": {
       "minPlayers": 4
@@ -1850,7 +1793,6 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1869,7 +1811,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem ficar muito próximos; se os dois quiserem, podem se beijar por até 15 segundos."
+      "ptBR": "A deve dar em B um beijo onde quiser e manter contato físico por mais 20 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -1882,7 +1824,6 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1901,7 +1842,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve fazer um elogio a B e perguntar se pode terminar o elogio com um beijo."
+      "ptBR": "A deve fazer um elogio a B e terminar com um beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -1914,7 +1855,6 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1933,7 +1873,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se prefere um beijo ou um abraço de 20 segundos; realizem somente a opção aceita pelos dois."
+      "ptBR": "A deve dar em B um beijo onde quiser e depois permanecer abraçado até o fim da rodada."
     },
     "requirements": {
       "minPlayers": 4
@@ -1946,7 +1886,6 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1965,7 +1904,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve pedir consentimento a B para um beijo e, se houver sim mútuo, B escolhe quando ele termina."
+      "ptBR": "A deve dar em B um beijo onde quiser; B decide quando o beijo termina."
     },
     "requirements": {
       "minPlayers": 4
@@ -1978,7 +1917,6 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -1997,7 +1935,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem manter contato visual por 10 segundos e depois decidir juntos se querem um beijo ou apenas continuar próximos."
+      "ptBR": "A e B mantêm contato visual por 10 segundos; depois A dá em B um beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -2010,7 +1948,6 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2029,7 +1966,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se gostaria de repetir um beijo anterior entre eles; se não houve beijo, façam um abraço demorado."
+      "ptBR": "A deve repetir um beijo anterior com B ou dar um novo beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -2042,7 +1979,6 @@
       "directed",
       "kiss",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2061,7 +1997,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e permanecer assim por duas rodadas."
+      "ptBR": "A tira uma peça de roupa e permanecer assim por duas rodadas."
     },
     "requirements": {
       "minPlayers": 4
@@ -2074,7 +2010,6 @@
       "directed",
       "undress",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2093,7 +2028,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e depois ficar próximo de B por 20 segundos."
+      "ptBR": "A tira uma peça de roupa e depois ficar próximo de B por 20 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -2106,7 +2041,6 @@
       "directed",
       "undress",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2125,7 +2059,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode escolher entre retirar uma peça de roupa ou fazer uma interação de proximidade com B por 30 segundos."
+      "ptBR": "A escolhe entre retirar uma peça de roupa ou fazer uma interação de proximidade com B por 30 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -2138,7 +2072,6 @@
       "directed",
       "undress",
       "level_3",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2170,7 +2103,6 @@
       "directed",
       "flirt",
       "level_3",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -2202,7 +2134,6 @@
       "directed",
       "flirt",
       "level_3",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -2234,13 +2165,12 @@
       "directed",
       "confession",
       "level_3",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L3C001",
+    "id": "L3C001_2",
     "category": "chaos",
     "level": 3,
     "intensity": 49,
@@ -2253,7 +2183,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem escolher juntos entre abraço, beijo consensual ou permanecer muito próximos por 30 segundos."
+      "ptBR": "A deve puxar B para perto e manter algum contato físico com ele até a próxima vez de A no jogo."
     },
     "requirements": {
       "minPlayers": 4
@@ -2266,7 +2196,6 @@
       "directed",
       "chaos",
       "level_3",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -2285,7 +2214,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B qual interação física não explícita desta partida ele mais gostaria de repetir."
+      "ptBR": "A deve escolher uma interação física já feita com B e prolongá-la até a próxima vez de A."
     },
     "requirements": {
       "minPlayers": 4
@@ -2298,7 +2227,6 @@
       "directed",
       "chaos",
       "level_3",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -2317,7 +2245,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve envolver B em um abraço pela cintura por 30 segundos."
+      "ptBR": "A deve envolver B pela cintura e permanecer assim até a próxima vez de A no jogo."
     },
     "requirements": {
       "minPlayers": 4
@@ -2330,7 +2258,6 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2349,7 +2276,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve acariciar o rosto ou o cabelo de B enquanto mantém contato visual."
+      "ptBR": "A deve acariciar o rosto, cabelo, nuca ou costas de B e manter algum contato físico até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -2362,7 +2289,6 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2381,7 +2307,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem permanecer encostados lado a lado até o fim da próxima rodada, se ambos estiverem confortáveis."
+      "ptBR": "A e B devem permanecer colados lado a lado até a próxima vez de A no jogo."
     },
     "requirements": {
       "minPlayers": 4
@@ -2394,7 +2320,6 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2413,7 +2338,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve fazer uma massagem breve nas costas de B por 30 segundos."
+      "ptBR": "A deve fazer uma massagem em B por 60 segundos e depois permanecer encostado a ele até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -2426,7 +2351,6 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2445,7 +2369,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem ficar frente a frente e muito próximos por 30 segundos; qualquer beijo continua dependendo de consentimento mútuo."
+      "ptBR": "A deve ficar frente a frente e bem próximo de B até sua próxima vez; pode alternar entre abraço e contato visual."
     },
     "requirements": {
       "minPlayers": 4
@@ -2458,7 +2382,6 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2477,7 +2400,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve apoiar as mãos na cintura ou nos ombros de B durante 20 segundos."
+      "ptBR": "A deve manter as mãos na cintura ou nos ombros de B e permanecer próximo até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -2490,7 +2413,6 @@
       "directed",
       "proximity",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2509,7 +2431,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se aceita um beijo mais demorado, de até 20 segundos. Só continuem enquanto ambos quiserem."
+      "ptBR": "A deve dar em B um beijo onde quiser e prolongá-lo pelo tempo que achar natural."
     },
     "requirements": {
       "minPlayers": 4
@@ -2522,7 +2444,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2541,7 +2462,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B algo que acha irresistível nele e perguntar se pode beijá-lo."
+      "ptBR": "A deve dizer a B algo que acha irresistível nele e terminar com um beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -2554,7 +2475,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2573,7 +2493,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve pedir consentimento para um beijo; se houver sim, B escolhe a duração dentro do que for confortável."
+      "ptBR": "A deve dar em B um beijo onde quiser; B escolhe a duração."
     },
     "requirements": {
       "minPlayers": 4
@@ -2586,7 +2506,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2605,7 +2524,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem se aproximar lentamente e decidir juntos se querem se beijar ou manter apenas a proximidade."
+      "ptBR": "A deve se aproximar lentamente de B e dar um beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -2618,7 +2537,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2637,7 +2555,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se quer repetir o melhor beijo que os dois já trocaram nesta partida."
+      "ptBR": "A deve repetir o melhor beijo que já trocou com B ou criar um novo, onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -2650,7 +2568,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2669,7 +2586,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se prefere um beijo breve seguido de abraço ou apenas um abraço longo."
+      "ptBR": "A deve dar em B um beijo onde quiser e permanecer abraçado a ele até a próxima rodada."
     },
     "requirements": {
       "minPlayers": 4
@@ -2682,7 +2599,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2701,7 +2617,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve convidar B para um beijo e deixar B decidir se aceita, adapta ou prefere uma alternativa de proximidade."
+      "ptBR": "A deve dar em B um beijo onde quiser; depois B escolhe a posição em que os dois permanecem próximos por 30 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -2714,7 +2630,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2733,7 +2648,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve fazer uma pergunta de flerte a B e, se ambos quiserem, terminar a resposta com um beijo."
+      "ptBR": "A faz uma pergunta de flerte a B e termina a resposta com um beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -2746,7 +2661,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2765,7 +2679,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B podem trocar um beijo consensual e depois permanecer abraçados por 20 segundos."
+      "ptBR": "A deve dar em B um beijo onde quiser e permanecer abraçado a ele até a próxima vez de A."
     },
     "requirements": {
       "minPlayers": 4
@@ -2778,7 +2692,6 @@
       "directed",
       "kiss",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2797,7 +2710,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e permanecer assim por três rodadas."
+      "ptBR": "A tira uma peça de roupa e permanecer assim por três rodadas."
     },
     "requirements": {
       "minPlayers": 4
@@ -2810,7 +2723,6 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2829,7 +2741,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e depois escolher entre abraço ou beijo consensual com B."
+      "ptBR": "A tira uma peça de roupa e depois escolher entre abraço ou beijo com B."
     },
     "requirements": {
       "minPlayers": 4
@@ -2842,7 +2754,6 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2861,7 +2772,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar uma peça de roupa que se sinta confortável em retirar e permanecer próximo de B por 30 segundos."
+      "ptBR": "A tira uma peça de roupa que se sinta confortável em retirar e permanecer próximo de B por 30 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -2874,7 +2785,6 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2893,7 +2803,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode escolher entre retirar uma peça ou permitir que a partida avance sem retirada, realizando uma interação de proximidade com B."
+      "ptBR": "A escolhe entre retirar uma peça ou permitir que a partida avance sem retirada, realizando uma interação de proximidade com B."
     },
     "requirements": {
       "minPlayers": 4
@@ -2906,7 +2816,6 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2925,7 +2834,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e dizer a B o que mais gosta na presença dele."
+      "ptBR": "A tira uma peça de roupa e dizer a B o que mais gosta na presença dele."
     },
     "requirements": {
       "minPlayers": 4
@@ -2938,7 +2847,6 @@
       "directed",
       "undress",
       "level_4",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -2970,13 +2878,12 @@
       "directed",
       "confession",
       "level_4",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
   },
   {
-    "id": "L4C001",
+    "id": "L4C001_2",
     "category": "chaos",
     "level": 4,
     "intensity": 69,
@@ -2989,7 +2896,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem escolher juntos uma interação já realizada nesta partida para repetir, desde que ambos queiram."
+      "ptBR": "A deve escolher entre abraço pela cintura, beijo onde quiser ou ficar colado a B; a opção escolhida dura até a próxima vez de A."
     },
     "requirements": {
       "minPlayers": 4
@@ -3002,7 +2909,6 @@
       "directed",
       "chaos",
       "level_4",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -3021,7 +2927,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve escolher entre abraço, beijo consensual ou uma peça de roupa a menos; B pode vetar qualquer opção."
+      "ptBR": "A deve repetir com B a interação física mais intensa que os dois já tiveram na partida e prolongá-la por 45 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -3034,7 +2940,6 @@
       "directed",
       "chaos",
       "level_4",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -3053,7 +2958,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem permanecer próximos por 30 segundos e cada um dizer o que mais gostou na interação com o outro."
+      "ptBR": "A e B devem permanecer próximos até a próxima vez de A, alternando pelo menos uma vez a forma de contato."
     },
     "requirements": {
       "minPlayers": 4
@@ -3066,7 +2971,6 @@
       "directed",
       "chaos",
       "level_4",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -3085,7 +2989,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve permanecer abraçado a B por 40 segundos, ajustando a posição para que ambos fiquem confortáveis."
+      "ptBR": "A deve permanecer abraçado a B até a próxima vez de A no jogo, podendo mudar a forma do abraço durante esse tempo."
     },
     "requirements": {
       "minPlayers": 4
@@ -3098,7 +3002,6 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3117,7 +3020,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem ficar muito próximos por 40 segundos; podem conversar, manter silêncio ou se beijar se houver vontade mútua."
+      "ptBR": "A e B devem permanecer muito próximos até a próxima vez de A; podem conversar, ficar em silêncio ou trocar beijos onde quiserem."
     },
     "requirements": {
       "minPlayers": 4
@@ -3130,7 +3033,6 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3149,7 +3051,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve escolher uma carícia não íntima — rosto, cabelo, ombros ou costas — e mantê-la por 20 segundos."
+      "ptBR": "A deve manter uma carícia em B — cabelo, rosto, nuca, ombros ou costas — até sua próxima vez no jogo."
     },
     "requirements": {
       "minPlayers": 4
@@ -3162,7 +3064,6 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3181,7 +3082,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem escolher juntos a forma de proximidade física não explícita que mais gostaram nesta partida e repeti-la."
+      "ptBR": "A escolhe a forma de contato físico de que mais gostou com B e deve mantê-la ou retomá-la até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -3194,7 +3095,6 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3213,7 +3113,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "Com consentimento de B, A deve envolver B pela cintura e permanecer assim enquanto diz o que mais o atrai nele."
+      "ptBR": "A deve envolver B pela cintura, dizer o que mais o atrai nele e permanecer encostado até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -3226,7 +3126,6 @@
       "directed",
       "proximity",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3245,7 +3144,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se quer um beijo demorado. Se houver sim mútuo, continuem somente enquanto ambos quiserem."
+      "ptBR": "A deve dar em B um beijo demorado onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -3258,7 +3157,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3277,7 +3175,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve dizer a B por que gostaria de beijá-lo e então perguntar se ele quer o beijo."
+      "ptBR": "A deve dizer a B por que gostaria de beijá-lo e então dar um beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -3290,7 +3188,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3309,7 +3206,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem escolher juntos entre um beijo demorado ou uma sequência de dois beijos breves."
+      "ptBR": "A deve dar dois beijos em B, em lugares diferentes à sua escolha."
     },
     "requirements": {
       "minPlayers": 4
@@ -3322,7 +3219,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3341,7 +3237,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve convidar B para repetir o beijo de que mais gostaram nesta partida; B pode adaptar ou recusar."
+      "ptBR": "A deve repetir o beijo de que mais gostou com B e depois dar outro beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -3354,7 +3250,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3373,7 +3268,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B como prefere ser beijado e, se ambos quiserem, realizar uma versão breve dessa preferência."
+      "ptBR": "A pergunta a B como prefere ser beijado e então dá um beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -3386,7 +3281,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3405,7 +3299,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B devem manter contato visual e decidir juntos quem inicia um beijo consensual."
+      "ptBR": "A e B mantêm contato visual; A inicia um beijo onde quiser."
     },
     "requirements": {
       "minPlayers": 4
@@ -3418,7 +3312,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3437,7 +3330,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se quer um beijo seguido de um abraço de 30 segundos."
+      "ptBR": "A deve dar em B um beijo onde quiser e permanecer abraçado até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -3450,7 +3343,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3469,7 +3361,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve oferecer a B duas opções: beijo consensual ou proximidade silenciosa por 40 segundos. B escolhe."
+      "ptBR": "A deve dar em B um beijo onde quiser e depois ficar colado a ele por 40 segundos."
     },
     "requirements": {
       "minPlayers": 4
@@ -3482,7 +3374,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3501,7 +3392,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B podem trocar um beijo consensual e permanecer próximos até a próxima rodada."
+      "ptBR": "A deve dar em B um beijo onde quiser e permanecer próximo até a próxima vez de A."
     },
     "requirements": {
       "minPlayers": 4
@@ -3514,7 +3405,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3533,7 +3423,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B se quer transformar este desafio em um beijo; se não, os dois fazem um abraço demorado."
+      "ptBR": "A transforma este desafio em um beijo em B onde quiser, seguido de um abraço demorado."
     },
     "requirements": {
       "minPlayers": 4
@@ -3546,7 +3436,6 @@
       "directed",
       "kiss",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3565,7 +3454,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça de roupa e escolher uma interação de proximidade com B."
+      "ptBR": "A tira uma peça de roupa e escolher uma interação de proximidade com B."
     },
     "requirements": {
       "minPlayers": 4
@@ -3578,7 +3467,6 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3597,7 +3485,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça e permanecer abraçado a B por 30 segundos, se ambos quiserem."
+      "ptBR": "A tira uma peça e permanecer abraçado a B por 30 segundos,"
     },
     "requirements": {
       "minPlayers": 4
@@ -3610,7 +3498,6 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3642,7 +3529,6 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3661,7 +3547,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode escolher entre retirar uma peça de roupa ou repetir uma interação física não explícita com B."
+      "ptBR": "A escolhe entre retirar uma peça de roupa ou repetir uma interação física com B."
     },
     "requirements": {
       "minPlayers": 4
@@ -3674,7 +3560,6 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3693,7 +3578,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A pode retirar voluntariamente uma peça e perguntar a B qual interação entre eles mais gostou nesta partida."
+      "ptBR": "A tira uma peça e perguntar a B qual interação entre eles mais gostou nesta partida."
     },
     "requirements": {
       "minPlayers": 4
@@ -3706,7 +3591,6 @@
       "directed",
       "undress",
       "level_5",
-      "consent_forward",
       "physical"
     ],
     "weight": 1.0
@@ -3725,7 +3609,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B escolhem juntos uma interação física não explícita já feita por qualquer dupla e adaptam para os dois."
+      "ptBR": "A deve escolher uma interação física já feita por qualquer dupla e adaptá-la para A e B, mantendo-a até a próxima vez de A."
     },
     "requirements": {
       "minPlayers": 4
@@ -3738,7 +3622,6 @@
       "directed",
       "chaos",
       "level_5",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -3757,7 +3640,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve perguntar a B qual interação gostaria de prolongar por mais 30 segundos e realizá-la apenas se ambos quiserem."
+      "ptBR": "A deve prolongar com B a interação de que mais gostou até sua próxima vez no jogo."
     },
     "requirements": {
       "minPlayers": 4
@@ -3770,7 +3653,6 @@
       "directed",
       "chaos",
       "level_5",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -3789,7 +3671,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A e B podem combinar abraço, beijo consensual e proximidade em uma sequência curta definida pelos dois."
+      "ptBR": "A deve combinar abraço, beijo onde quiser e proximidade em uma sequência contínua de 60 segundos com B."
     },
     "requirements": {
       "minPlayers": 4
@@ -3802,7 +3684,6 @@
       "directed",
       "chaos",
       "level_5",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
@@ -3821,7 +3702,7 @@
       "target": "B"
     },
     "text": {
-      "ptBR": "A deve oferecer a B três opções — abraço, beijo consensual ou proximidade silenciosa — e B escolhe uma."
+      "ptBR": "A escolhe entre abraço pela cintura, beijo onde quiser ou ficar colado a B e mantém a escolha até sua próxima vez."
     },
     "requirements": {
       "minPlayers": 4
@@ -3834,7 +3715,6 @@
       "directed",
       "chaos",
       "level_5",
-      "consent_forward",
       "social"
     ],
     "weight": 1.0
