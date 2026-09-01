@@ -6,7 +6,7 @@
 <div id="penalty" class="hidden"><div class="route"><span id="an"></span><i>→</i><span id="bn"></span></div><div id="power" class="power hidden"><b id="pt"></b><div id="pb" class="pbuttons"></div></div><div class="mission"><div id="cat" class="cat"></div><div id="text" class="text"></div><div class="actions"><button id="done">FEITO 🔥</button><button id="drink" class="drink">BEBER 🥃</button></div></div></div>
 <div class="panel"><small>⚡ PODERES</small><div id="inventory"></div></div><button id="end" class="full" style="background:#302438">ENCERRAR</button></section></div>
 <div id="overlay" class="overlay hidden"><div class="box"><h2 id="ot"></h2><p id="ox"></p><button id="ok" class="full">CONTINUAR</button></div></div>
-<script>
+<script> 
 let C=[],G;const $=x=>document.getElementById(x),P=["🌱 Aquecimento","😏 Química","🔥 Desejo","🫦 Intimidade","🌙 Madrugada"],PW={REVERSE:"⇄ Inversão",REDIRECT:"↗ Desvio",REROLL:"↻ Nova carta"};
 function inputs(){names.innerHTML="";for(let i=0;i<+count.value;i++){let x=document.createElement("input");x.id="p"+i;x.placeholder="Jogador "+(i+1);names.appendChild(x)}}count.onchange=inputs;inputs();
 function rnd(){G.seed=(G.seed*1664525+1013904223)>>>0;return G.seed/4294967296}function w(a,f){let q=a.map(x=>Math.max(.001,f(x))),t=q.reduce((a,b)=>a+b),r=rnd()*t;for(let i=0;i<a.length;i++){r-=q[i];if(r<=0)return a[i]}return a.at(-1)}
