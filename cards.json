@@ -1,3722 +1,852 @@
 [
   {
-    "id": "L1P001",
-    "category": "proximity",
+    "id": "C01",
+    "number": 1,
     "level": 1,
-    "intensity": 9,
+    "category": "general",
+    "text": {
+      "ptBR": "A dá um selinho demorado em B."
+    },
+    "temperatureDelta": 2,
+    "tensionDelta": 2,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C02",
+    "number": 2,
+    "level": 1,
+    "category": "general",
+    "text": {
+      "ptBR": "A bebe um shot da bebida que B escolher."
+    },
+    "temperatureDelta": 0,
+    "tensionDelta": 1,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C03",
+    "number": 3,
+    "level": 1,
+    "category": "clothing_restore",
+    "text": {
+      "ptBR": "A coloca de volta uma peça de roupa que B mandar."
+    },
+    "temperatureDelta": -2,
+    "tensionDelta": -1,
+    "weight": 0.55,
+    "clothingDelta": 1,
+    "clothingRequirement": "restores_a",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C04",
+    "number": 4,
+    "level": 1,
+    "category": "general",
+    "text": {
+      "ptBR": "A fica em pé por uma rodada inteira servindo B."
+    },
     "temperatureDelta": 1,
     "tensionDelta": 2,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve encostar a palma da mão na palma de B por 15 segundos."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L1P002",
-    "category": "proximity",
+    "id": "C05",
+    "number": 5,
     "level": 1,
-    "intensity": 10,
+    "category": "general",
+    "text": {
+      "ptBR": "A faz uma massagem relaxante de 1 minuto nos ombros de B."
+    },
+    "temperatureDelta": 2,
+    "tensionDelta": 1,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C06",
+    "number": 6,
+    "level": 1,
+    "category": "clothing_other",
+    "text": {
+      "ptBR": "A tira os sapatos e as meias de B usando apenas uma mão."
+    },
     "temperatureDelta": 1,
     "tensionDelta": 2,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem ficar joelho com joelho por 20 segundos, mantendo contato visual."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_feet",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L1P003",
-    "category": "proximity",
+    "id": "C07",
+    "number": 7,
     "level": 1,
-    "intensity": 11,
+    "category": "general",
+    "text": {
+      "ptBR": "A alimenta B colocando uma fruta ou petisco na boca dele."
+    },
     "temperatureDelta": 1,
     "tensionDelta": 2,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve tocar o antebraço de B enquanto faz um elogio sincero."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L1P004",
-    "category": "proximity",
+    "id": "C08",
+    "number": 8,
     "level": 1,
-    "intensity": 12,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "category": "general",
     "text": {
-      "ptBR": "A deve ficar ombro a ombro com B até o fim da rodada."
+      "ptBR": "A passa a mão lentamente pelo cabelo de B."
     },
+    "temperatureDelta": 1,
+    "tensionDelta": 1,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L1P005",
-    "category": "proximity",
+    "id": "C09",
+    "number": 9,
     "level": 1,
-    "intensity": 13,
+    "category": "general",
+    "text": {
+      "ptBR": "A segura as mãos de B e faz contato visual sem rir por 30 segundos."
+    },
     "temperatureDelta": 1,
     "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar um abraço de 10 segundos em B."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L1P006",
-    "category": "proximity",
+    "id": "C10",
+    "number": 10,
     "level": 1,
-    "intensity": 14,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "category": "general",
     "text": {
-      "ptBR": "A e B devem ficar frente a frente, a um passo de distância, por 15 segundos sem falar."
+      "ptBR": "A canta o refrão de uma música sensual olhando para B."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1P007",
-    "category": "proximity",
-    "level": 1,
-    "intensity": 15,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve segurar a mão de B por 20 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1P008",
-    "category": "proximity",
-    "level": 1,
-    "intensity": 16,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve se aproximar de B o suficiente para falar baixo e dizer o que mais chamou sua atenção nele."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1P009",
-    "category": "proximity",
-    "level": 1,
-    "intensity": 17,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve apoiar uma mão no ombro de B durante 15 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1P010",
-    "category": "proximity",
-    "level": 1,
-    "intensity": 18,
-    "temperatureDelta": 1,
+    "temperatureDelta": 0,
     "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem trocar de lugar sentando-se lado a lado e permanecer assim até a próxima carta."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_1",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L1F001",
-    "category": "flirt",
-    "level": 1,
-    "intensity": 9,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve olhar para B por 8 segundos e fazer um elogio sincero."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1F002",
-    "category": "flirt",
-    "level": 1,
-    "intensity": 10,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual detalhe do jeito dele mais chamou sua atenção."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1F003",
-    "category": "flirt",
-    "level": 1,
-    "intensity": 11,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual foi sua primeira impressão dele."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1F004",
-    "category": "flirt",
-    "level": 1,
-    "intensity": 12,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve completar olhando para B: “uma coisa em você que chama atenção é..”"
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1F005",
-    "category": "flirt",
-    "level": 1,
-    "intensity": 13,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual roupa, acessório ou detalhe visual dele acha mais bonito."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1F006",
-    "category": "flirt",
-    "level": 1,
-    "intensity": 14,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve fazer a B uma provocação leve e terminar com um elogio."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C001",
-    "category": "confession",
-    "level": 1,
-    "intensity": 11,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B uma situação em que já ficou sem graça por causa de atração."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C002",
-    "category": "confession",
-    "level": 1,
-    "intensity": 12,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual tipo de atitude costuma despertar sua curiosidade."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C003",
-    "category": "confession",
-    "level": 1,
-    "intensity": 13,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B o que faz um flerte funcionar com ele."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C004",
-    "category": "confession",
-    "level": 1,
-    "intensity": 14,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B uma coisa sobre si que normalmente demora a revelar."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C001_2",
-    "category": "chaos",
-    "level": 1,
-    "intensity": 13,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem trocar um elogio cada um, sem repetir algo já dito nesta partida."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C002_2",
-    "category": "chaos",
-    "level": 1,
-    "intensity": 14,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve fazer uma pergunta de química a B; B pode responder ou devolver a mesma pergunta."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C003_2",
-    "category": "chaos",
-    "level": 1,
-    "intensity": 15,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem manter contato visual enquanto o grupo conta lentamente até 10."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L1C004_2",
-    "category": "chaos",
-    "level": 1,
-    "intensity": 16,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual interação entre os dois gostaria de repetir mais tarde,"
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_1",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P001",
-    "category": "proximity",
+    "id": "C11",
+    "number": 11,
     "level": 2,
-    "intensity": 25,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "category": "general",
     "text": {
-      "ptBR": "A deve abraçá-lo por 15 segundos e permanecer próximo depois."
+      "ptBR": "A dá um beijo quente em B por 10seg."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P002",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 26,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve segurar as duas mãos de B por 20 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P003",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 27,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem ficar frente a frente a poucos centímetros de distância por 15 segundos; qualquer aproximação adicional exige vontade mútua."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P004",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 28,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve tocar suavemente o rosto de B por alguns segundos e depois fazer um elogio."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P005",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 29,
-    "temperatureDelta": 1,
+    "temperatureDelta": 4,
     "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve apoiar a mão na cintura de B durante 15 segundos."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L2P006",
-    "category": "proximity",
+    "id": "C12",
+    "number": 12,
     "level": 2,
-    "intensity": 30,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "category": "general",
     "text": {
-      "ptBR": "A deve sentar-se bem próximo de B e permanecer assim até a próxima rodada."
+      "ptBR": "A rebola por 10seg no colo de B."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P007",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 31,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve fazer uma massagem breve nos ombros de B por 20 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P008",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 32,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem ficar de pé frente a frente e aproximar-se até uma distância confortável para ambos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P009",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 33,
-    "temperatureDelta": 1,
-    "tensionDelta": 2,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve passar o braço pelos ombros de B e permanecer assim por 20 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2P010",
-    "category": "proximity",
-    "level": 2,
-    "intensity": 34,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer algo provocante a B enquanto permanece próximo dele por 15 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2K001",
-    "category": "kiss",
-    "level": 2,
-    "intensity": 29,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo no rosto."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2K002",
-    "category": "kiss",
-    "level": 2,
-    "intensity": 30,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve perguntar a B se gostaria de um beijo breve. Se ambos disserem sim, podem trocar o beijo."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2K003",
-    "category": "kiss",
-    "level": 2,
-    "intensity": 31,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem aproximar os rostos por alguns segundos; depois A dá em B um beijo no rosto."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2K004",
-    "category": "kiss",
-    "level": 2,
-    "intensity": 32,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve perguntar a B se prefere um abraço demorado ou um beijo breve e realizar apenas a opção aceita por ambos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_2",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2F001",
-    "category": "flirt",
-    "level": 2,
-    "intensity": 25,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B como tentaria chamar sua atenção em uma festa."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2F002",
-    "category": "flirt",
-    "level": 2,
-    "intensity": 26,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve sussurrar a B uma frase de flerte que gostaria de ouvir."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2F003",
-    "category": "flirt",
-    "level": 2,
-    "intensity": 27,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual característica dele acha mais difícil de ignorar."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2F004",
-    "category": "flirt",
-    "level": 2,
-    "intensity": 28,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve perguntar a B qual tipo de aproximação funciona melhor com ele."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C001",
-    "category": "confession",
-    "level": 2,
-    "intensity": 27,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual situação entre adultos mais desperta sua curiosidade sem entrar em detalhes explícitos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C002",
-    "category": "confession",
-    "level": 2,
-    "intensity": 28,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve contar a B qual foi o flerte mais memorável que já recebeu."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C001_2",
-    "category": "chaos",
-    "level": 2,
-    "intensity": 31,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A escolhe entre segurar a mão de B por 30 segundos ou fazer uma confissão a B."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C002_2",
-    "category": "chaos",
-    "level": 2,
-    "intensity": 32,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem ficar próximos enquanto cada um diz uma coisa que considera atraente no outro."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C003",
-    "category": "chaos",
-    "level": 2,
-    "intensity": 33,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve pedir a B que escolha entre abraço, mãos dadas ou apenas contato visual; façam somente a opção que ambos aceitarem."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L2C004",
-    "category": "chaos",
-    "level": 2,
-    "intensity": 34,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual foi o momento mais inesperado da partida até agora."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_2",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3P001",
-    "category": "proximity",
-    "level": 3,
-    "intensity": 43,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve permanecer abraçado à cintura de B até a próxima vez de A no jogo."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3P002",
-    "category": "proximity",
-    "level": 3,
-    "intensity": 44,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve ficar colado a B, com as pernas encostadas, até a próxima vez de A no jogo."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3P003",
-    "category": "proximity",
-    "level": 3,
-    "intensity": 45,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve manter uma carícia no cabelo, nuca, ombros ou costas de B até a próxima vez de A."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3P004",
-    "category": "proximity",
-    "level": 3,
-    "intensity": 46,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve manter contato físico contínuo com B até sua próxima vez no jogo; pode mudar a posição durante esse tempo."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3P005",
-    "category": "proximity",
-    "level": 3,
-    "intensity": 47,
-    "temperatureDelta": 1,
+    "temperatureDelta": 5,
     "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve fazer uma massagem em B por 45 segundos e depois permanecer encostado a B até sua próxima vez."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L3P006",
-    "category": "proximity",
-    "level": 3,
-    "intensity": 48,
-    "temperatureDelta": 1,
+    "id": "C13",
+    "number": 13,
+    "level": 2,
+    "category": "clothing_remove",
+    "text": {
+      "ptBR": "A tira uma peça de roupa própria que B escolher."
+    },
+    "temperatureDelta": 4,
     "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve manter uma mão na cintura de B até a próxima vez de A no jogo."
-    },
+    "weight": 3.2,
+    "clothingDelta": -1,
+    "clothingRequirement": "removes_a",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L3P007",
-    "category": "proximity",
-    "level": 3,
-    "intensity": 49,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C14",
+    "number": 14,
+    "level": 2,
+    "category": "general",
     "text": {
-      "ptBR": "A deve se aproximar de B, dizer em voz baixa o que mais o atrai e permanecer encostado a ele até sua próxima vez."
+      "ptBR": "A dá um beijo molhado no peito de B."
     },
+    "temperatureDelta": 4,
+    "tensionDelta": 2,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L3P008",
-    "category": "proximity",
-    "level": 3,
-    "intensity": 50,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C15",
+    "number": 15,
+    "level": 2,
+    "category": "general",
     "text": {
-      "ptBR": "A escolhe entre abraço pela cintura, mãos entrelaçadas ou carícia no rosto e deve manter a interação até sua próxima vez."
+      "ptBR": "A apalpa o peito de B por 10 segundos."
     },
+    "temperatureDelta": 4,
+    "tensionDelta": 2,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L3K001",
-    "category": "kiss",
-    "level": 3,
-    "intensity": 47,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C16",
+    "number": 16,
+    "level": 2,
+    "category": "general",
     "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e permanecer próximo dele até o fim da rodada."
+      "ptBR": "A dá uma mordida suave na orelha de B."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3K002",
-    "category": "kiss",
-    "level": 3,
-    "intensity": 48,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser; B escolhe se será breve ou demorado."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3K003",
-    "category": "kiss",
-    "level": 3,
-    "intensity": 49,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e manter contato físico por mais 20 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3K004",
-    "category": "kiss",
-    "level": 3,
-    "intensity": 50,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve fazer um elogio a B e terminar com um beijo onde quiser."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3K005",
-    "category": "kiss",
-    "level": 3,
-    "intensity": 51,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e depois permanecer abraçado até o fim da rodada."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3K006",
-    "category": "kiss",
-    "level": 3,
-    "intensity": 52,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser; B decide quando o beijo termina."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3K007",
-    "category": "kiss",
-    "level": 3,
-    "intensity": 53,
     "temperatureDelta": 3,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B mantêm contato visual por 10 segundos; depois A dá em B um beijo onde quiser."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3K008",
-    "category": "kiss",
-    "level": 3,
-    "intensity": 54,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve repetir um beijo anterior com B ou dar um novo beijo onde quiser."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3U001",
-    "category": "undress",
-    "level": 3,
-    "intensity": 51,
-    "temperatureDelta": 2,
     "tensionDelta": 2,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A tira uma peça de roupa e permanecer assim por duas rodadas."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L3U002",
-    "category": "undress",
-    "level": 3,
-    "intensity": 52,
-    "temperatureDelta": 2,
-    "tensionDelta": 2,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C17",
+    "number": 17,
+    "level": 2,
+    "category": "general",
     "text": {
-      "ptBR": "A tira uma peça de roupa e depois ficar próximo de B por 20 segundos."
+      "ptBR": "A apalpa o pêssego de B por cima da roupa por 10 segundos."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3U003",
-    "category": "undress",
-    "level": 3,
-    "intensity": 53,
-    "temperatureDelta": 2,
-    "tensionDelta": 2,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A escolhe entre retirar uma peça de roupa ou fazer uma interação de proximidade com B por 30 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_3",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3F001",
-    "category": "flirt",
-    "level": 3,
-    "intensity": 45,
-    "temperatureDelta": 1,
+    "temperatureDelta": 5,
     "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B o que nele mais aumentou sua curiosidade durante a partida."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_3",
-      "social"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L3F002",
-    "category": "flirt",
-    "level": 3,
-    "intensity": 46,
-    "temperatureDelta": 1,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C18",
+    "number": 18,
+    "level": 2,
+    "category": "clothing_other",
     "text": {
-      "ptBR": "A deve dizer a B como imaginaria um encontro particularmente provocante entre os dois, sem detalhes explícitos."
+      "ptBR": "A desabotoa a calça de B bem devagar."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "flirt",
-      "level_3",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3C001",
-    "category": "confession",
-    "level": 3,
-    "intensity": 46,
-    "temperatureDelta": 1,
+    "temperatureDelta": 4,
     "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve revelar a B uma coisa que considera especialmente sedutora em alguém."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_access",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_3",
-      "social"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L3C001_2",
-    "category": "chaos",
-    "level": 3,
-    "intensity": 49,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C19",
+    "number": 19,
+    "level": 2,
+    "category": "general",
     "text": {
-      "ptBR": "A deve puxar B para perto e manter algum contato físico com ele até a próxima vez de A no jogo."
+      "ptBR": "A passa uma pedra de gelo no peito de B usando os dedos."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_3",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L3C002",
-    "category": "chaos",
-    "level": 3,
-    "intensity": 50,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve escolher uma interação física já feita com B e prolongá-la até a próxima vez de A."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_3",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4P001",
-    "category": "proximity",
-    "level": 4,
-    "intensity": 61,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve envolver B pela cintura e permanecer assim até a próxima vez de A no jogo."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4P002",
-    "category": "proximity",
-    "level": 4,
-    "intensity": 62,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve acariciar o rosto, cabelo, nuca ou costas de B e manter algum contato físico até sua próxima vez."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4P003",
-    "category": "proximity",
-    "level": 4,
-    "intensity": 63,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem permanecer colados lado a lado até a próxima vez de A no jogo."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4P004",
-    "category": "proximity",
-    "level": 4,
-    "intensity": 64,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve fazer uma massagem em B por 60 segundos e depois permanecer encostado a ele até sua próxima vez."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4P005",
-    "category": "proximity",
-    "level": 4,
-    "intensity": 65,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve ficar frente a frente e bem próximo de B até sua próxima vez; pode alternar entre abraço e contato visual."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4P006",
-    "category": "proximity",
-    "level": 4,
-    "intensity": 66,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve manter as mãos na cintura ou nos ombros de B e permanecer próximo até sua próxima vez."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4K001",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 65,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e prolongá-lo pelo tempo que achar natural."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4K002",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 66,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B algo que acha irresistível nele e terminar com um beijo onde quiser."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4K003",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 67,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser; B escolhe a duração."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4K004",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 68,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve se aproximar lentamente de B e dar um beijo onde quiser."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4K005",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 69,
-    "temperatureDelta": 2,
-    "tensionDelta": 5,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve repetir o melhor beijo que já trocou com B ou criar um novo, onde quiser."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4K006",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 70,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e permanecer abraçado a ele até a próxima rodada."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4K007",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 71,
     "temperatureDelta": 3,
+    "tensionDelta": 2,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C20",
+    "number": 20,
+    "level": 2,
+    "category": "general",
+    "text": {
+      "ptBR": "A deita a cabeça no colo de B enquanto B faz cafuné."
+    },
+    "temperatureDelta": 2,
+    "tensionDelta": 2,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C21",
+    "number": 21,
+    "level": 3,
+    "category": "general",
+    "text": {
+      "ptBR": "A pega na berinjela de B."
+    },
+    "temperatureDelta": 6,
     "tensionDelta": 4,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser; depois B escolhe a posição em que os dois permanecem próximos por 30 segundos."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L4K008",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 72,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C22",
+    "number": 22,
+    "level": 3,
+    "category": "general",
     "text": {
-      "ptBR": "A faz uma pergunta de flerte a B e termina a resposta com um beijo onde quiser."
+      "ptBR": "A fica de 4 pra todos verem, prestando reverência a B."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4K009",
-    "category": "kiss",
-    "level": 4,
-    "intensity": 73,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e permanecer abraçado a ele até a próxima vez de A."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4U001",
-    "category": "undress",
-    "level": 4,
-    "intensity": 67,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A tira uma peça de roupa e permanecer assim por três rodadas."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4U002",
-    "category": "undress",
-    "level": 4,
-    "intensity": 68,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A tira uma peça de roupa e depois escolher entre abraço ou beijo com B."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4U003",
-    "category": "undress",
-    "level": 4,
-    "intensity": 69,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A tira uma peça de roupa que se sinta confortável em retirar e permanecer próximo de B por 30 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4U004",
-    "category": "undress",
-    "level": 4,
-    "intensity": 70,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A escolhe entre retirar uma peça ou permitir que a partida avance sem retirada, realizando uma interação de proximidade com B."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4U005",
-    "category": "undress",
-    "level": 4,
-    "intensity": 71,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A tira uma peça de roupa e dizer a B o que mais gosta na presença dele."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_4",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4C001",
-    "category": "confession",
-    "level": 4,
-    "intensity": 63,
-    "temperatureDelta": 1,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dizer a B qual limite ou preferência considera importante para que uma interação seja realmente boa."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "confession",
-      "level_4",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4C001_2",
-    "category": "chaos",
-    "level": 4,
-    "intensity": 69,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve escolher entre abraço pela cintura, beijo onde quiser ou ficar colado a B; a opção escolhida dura até a próxima vez de A."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_4",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4C002",
-    "category": "chaos",
-    "level": 4,
-    "intensity": 70,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve repetir com B a interação física mais intensa que os dois já tiveram na partida e prolongá-la por 45 segundos."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_4",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L4C003",
-    "category": "chaos",
-    "level": 4,
-    "intensity": 71,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem permanecer próximos até a próxima vez de A, alternando pelo menos uma vez a forma de contato."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_4",
-      "social"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5P001",
-    "category": "proximity",
-    "level": 5,
-    "intensity": 79,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve permanecer abraçado a B até a próxima vez de A no jogo, podendo mudar a forma do abraço durante esse tempo."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5P002",
-    "category": "proximity",
-    "level": 5,
-    "intensity": 80,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B devem permanecer muito próximos até a próxima vez de A; podem conversar, ficar em silêncio ou trocar beijos onde quiserem."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5P003",
-    "category": "proximity",
-    "level": 5,
-    "intensity": 81,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve manter uma carícia em B — cabelo, rosto, nuca, ombros ou costas — até sua próxima vez no jogo."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5P004",
-    "category": "proximity",
-    "level": 5,
-    "intensity": 82,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A escolhe a forma de contato físico de que mais gostou com B e deve mantê-la ou retomá-la até sua próxima vez."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5P005",
-    "category": "proximity",
-    "level": 5,
-    "intensity": 83,
-    "temperatureDelta": 2,
+    "temperatureDelta": 5,
     "tensionDelta": 5,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve envolver B pela cintura, dizer o que mais o atrai nele e permanecer encostado até sua próxima vez."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "proximity",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5K001",
+    "id": "C23",
+    "number": 23,
+    "level": 3,
     "category": "kiss",
-    "level": 5,
-    "intensity": 81,
-    "temperatureDelta": 2,
+    "text": {
+      "ptBR": "A faz uma trilha de beijo molhado do umbigo até o mamilo de B."
+    },
+    "temperatureDelta": 5,
+    "tensionDelta": 3,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_torso_access",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C24",
+    "number": 24,
+    "level": 3,
+    "category": "general",
+    "text": {
+      "ptBR": "A dá um beijinho molhado e demorado no pescoço de B."
+    },
+    "temperatureDelta": 4,
+    "tensionDelta": 2,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C25",
+    "number": 25,
+    "level": 3,
+    "category": "drink",
+    "text": {
+      "ptBR": "A bebe um shot servido diretamente no umbigo de B."
+    },
+    "temperatureDelta": 4,
     "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo demorado onde quiser."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_torso_access",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5K002",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 82,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C26",
+    "number": 26,
+    "level": 3,
+    "category": "exposure",
     "text": {
-      "ptBR": "A deve dizer a B por que gostaria de beijá-lo e então dar um beijo onde quiser."
+      "ptBR": "A mostra o próprio pêssego nu apenas para B ver."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5K003",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 83,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar dois beijos em B, em lugares diferentes à sua escolha."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5K004",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 84,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve repetir o beijo de que mais gostou com B e depois dar outro beijo onde quiser."
-    },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5K005",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 85,
-    "temperatureDelta": 2,
+    "temperatureDelta": 6,
     "tensionDelta": 5,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A pergunta a B como prefere ser beijado e então dá um beijo onde quiser."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5K006",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 86,
-    "temperatureDelta": 2,
+    "id": "C27",
+    "number": 27,
+    "level": 3,
+    "category": "clothing_other",
+    "text": {
+      "ptBR": "A tira a camisa de B usando apenas os dentes."
+    },
+    "temperatureDelta": 4,
     "tensionDelta": 4,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A e B mantêm contato visual; A inicia um beijo onde quiser."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_torso_access",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5K007",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 87,
-    "temperatureDelta": 3,
+    "id": "C28",
+    "number": 28,
+    "level": 3,
+    "category": "clothing_remove",
+    "text": {
+      "ptBR": "A tira a própria camisa e fica peito a peito com B por 1 minuto."
+    },
+    "temperatureDelta": 5,
+    "tensionDelta": 3,
+    "weight": 1.8,
+    "clothingDelta": -1,
+    "clothingRequirement": "removes_a",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C29",
+    "number": 29,
+    "level": 3,
+    "category": "general",
+    "text": {
+      "ptBR": "A massageia as pernas de B subindo até a virilha."
+    },
+    "temperatureDelta": 6,
+    "tensionDelta": 3,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C30",
+    "number": 30,
+    "level": 3,
+    "category": "general",
+    "text": {
+      "ptBR": "A fecha os olhos e deixa B guiar a mão de A pelo corpo dele."
+    },
+    "temperatureDelta": 6,
     "tensionDelta": 4,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e permanecer abraçado até sua próxima vez."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5K008",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 88,
-    "temperatureDelta": 2,
+    "id": "C31",
+    "number": 31,
+    "level": 4,
+    "category": "exposure",
+    "text": {
+      "ptBR": "A mostra o @ para B."
+    },
+    "temperatureDelta": 7,
+    "tensionDelta": 6,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C32",
+    "number": 32,
+    "level": 4,
+    "category": "explicit",
+    "text": {
+      "ptBR": "A dá um selinho nas bolas de B."
+    },
+    "temperatureDelta": 8,
+    "tensionDelta": 6,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_exposed",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C33",
+    "number": 33,
+    "level": 4,
+    "category": "explicit",
+    "text": {
+      "ptBR": "A deixa B passar a mão no seu pêssego até os dedos chegarem no @ de A."
+    },
+    "temperatureDelta": 8,
+    "tensionDelta": 6,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C34",
+    "number": 34,
+    "level": 4,
+    "category": "explicit",
+    "text": {
+      "ptBR": "A apalpa o pêssego de B por 10 segundos por dentro da calça."
+    },
+    "temperatureDelta": 7,
     "tensionDelta": 4,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e depois ficar colado a ele por 40 segundos."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_access",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5K009",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 89,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C35",
+    "number": 35,
+    "level": 4,
+    "category": "explicit",
     "text": {
-      "ptBR": "A deve dar em B um beijo onde quiser e permanecer próximo até a próxima vez de A."
+      "ptBR": "A apalpa as bolas de B por 10 segundos por dentro da calça."
     },
-    "requirements": {
-      "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
-  },
-  {
-    "id": "L5K010",
-    "category": "kiss",
-    "level": 5,
-    "intensity": 90,
-    "temperatureDelta": 2,
+    "temperatureDelta": 8,
     "tensionDelta": 5,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
-    "text": {
-      "ptBR": "A transforma este desafio em um beijo em B onde quiser, seguido de um abraço demorado."
-    },
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_access",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "kiss",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5U001",
-    "category": "undress",
-    "level": 5,
-    "intensity": 83,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C36",
+    "number": 36,
+    "level": 4,
+    "category": "exposure",
     "text": {
-      "ptBR": "A tira uma peça de roupa e escolher uma interação de proximidade com B."
+      "ptBR": "A mostra uma parte da sua própria berinjela para B."
     },
+    "temperatureDelta": 7,
+    "tensionDelta": 6,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5U002",
-    "category": "undress",
-    "level": 5,
-    "intensity": 84,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C37",
+    "number": 37,
+    "level": 4,
+    "category": "general",
     "text": {
-      "ptBR": "A tira uma peça e permanecer abraçado a B por 30 segundos,"
+      "ptBR": "A mostra um nude seu (foto íntima) no celular para B."
     },
+    "temperatureDelta": 7,
+    "tensionDelta": 7,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5U003",
-    "category": "undress",
-    "level": 5,
-    "intensity": 85,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C38",
+    "number": 38,
+    "level": 4,
+    "category": "explicit",
     "text": {
-      "ptBR": "A pode escolher ficar com uma peça a menos pelas próximas três rodadas; depois faz um elogio a B."
+      "ptBR": "A mostra o próprio pêssego empinado e deixa B dar um beijo molhado nele."
     },
+    "temperatureDelta": 9,
+    "tensionDelta": 6,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5U004",
-    "category": "undress",
-    "level": 5,
-    "intensity": 86,
-    "temperatureDelta": 2,
-    "tensionDelta": 3,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C39",
+    "number": 39,
+    "level": 4,
+    "category": "clothing_other",
     "text": {
-      "ptBR": "A escolhe entre retirar uma peça de roupa ou repetir uma interação física com B."
+      "ptBR": "A ajoelha na frente de B e tira a calça dele usando apenas a boca."
     },
+    "temperatureDelta": 8,
+    "tensionDelta": 5,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_access",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5U005",
-    "category": "undress",
-    "level": 5,
-    "intensity": 87,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "id": "C40",
+    "number": 40,
+    "level": 4,
+    "category": "explicit",
     "text": {
-      "ptBR": "A tira uma peça e perguntar a B qual interação entre eles mais gostou nesta partida."
+      "ptBR": "A derrama um pouco de bebida na virilha de B e lambe tudo até secar."
     },
+    "temperatureDelta": 9,
+    "tensionDelta": 5,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_access",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "undress",
-      "level_5",
-      "physical"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5C001",
-    "category": "chaos",
+    "id": "C41",
+    "number": 41,
     "level": 5,
-    "intensity": 85,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 20,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "category": "explicit",
     "text": {
-      "ptBR": "A deve escolher uma interação física já feita por qualquer dupla e adaptá-la para A e B, mantendo-a até a próxima vez de A."
+      "ptBR": "A mama a berinjela de B por 20seg."
     },
+    "temperatureDelta": 10,
+    "tensionDelta": 6,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_exposed",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_5",
-      "social"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5C002",
-    "category": "chaos",
+    "id": "C42",
+    "number": 42,
     "level": 5,
-    "intensity": 86,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 25,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "category": "explicit",
     "text": {
-      "ptBR": "A deve prolongar com B a interação de que mais gostou até sua próxima vez no jogo."
+      "ptBR": "A recebe um beijo grego de B."
     },
+    "temperatureDelta": 10,
+    "tensionDelta": 7,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_5",
-      "social"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5C003",
-    "category": "chaos",
+    "id": "C43",
+    "number": 43,
     "level": 5,
-    "intensity": 87,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 30,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "category": "explicit",
     "text": {
-      "ptBR": "A deve combinar abraço, beijo onde quiser e proximidade em uma sequência contínua de 60 segundos com B."
+      "ptBR": "A aguenta só a cabecinha da berinjela de B por 10seg."
     },
+    "temperatureDelta": 10,
+    "tensionDelta": 7,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed_and_b_lower_exposed",
     "requirements": {
       "minPlayers": 4
-    },
-    "effects": {
-      "clothing": null,
-      "power": null
-    },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_5",
-      "social"
-    ],
-    "weight": 1.0
+    }
   },
   {
-    "id": "L5C004",
-    "category": "chaos",
+    "id": "C44",
+    "number": 44,
     "level": 5,
-    "intensity": 88,
-    "temperatureDelta": 2,
-    "tensionDelta": 4,
-    "durationSeconds": 15,
-    "participantCount": 2,
-    "roles": {
-      "actor": "A",
-      "target": "B"
-    },
+    "category": "explicit",
     "text": {
-      "ptBR": "A escolhe entre abraço pela cintura, beijo onde quiser ou ficar colado a B e mantém a escolha até sua próxima vez."
+      "ptBR": "A fica de joelhos e dá um beijo molhado na berinjela de B e dos demais jogadores."
     },
+    "temperatureDelta": 10,
+    "tensionDelta": 7,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_exposed",
     "requirements": {
       "minPlayers": 4
+    }
+  },
+  {
+    "id": "C45",
+    "number": 45,
+    "level": 5,
+    "category": "explicit",
+    "text": {
+      "ptBR": "A é o ativo da rodada: B e os demais ficam de quatro e A lambe o @ de cada um."
     },
-    "effects": {
-      "clothing": null,
-      "power": null
+    "temperatureDelta": 10,
+    "tensionDelta": 8,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_group_lower_exposed",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C46",
+    "number": 46,
+    "level": 5,
+    "category": "explicit",
+    "text": {
+      "ptBR": "A fica de quatro e recebe uma lambida no @ de B e de todos os jogadores."
     },
-    "tags": [
-      "directed",
-      "chaos",
-      "level_5",
-      "social"
-    ],
-    "weight": 1.0
+    "temperatureDelta": 10,
+    "tensionDelta": 8,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C47",
+    "number": 47,
+    "level": 5,
+    "category": "explicit",
+    "text": {
+      "ptBR": "A aguenta a cabecinha da berinjela de B e dos demais jogadores por 10seg cada."
+    },
+    "temperatureDelta": 10,
+    "tensionDelta": 8,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed_and_group_lower_exposed",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C48",
+    "number": 48,
+    "level": 5,
+    "category": "explicit",
+    "text": {
+      "ptBR": "A é o passivo da rodada e tem que dar para B e todos os jogadores com cronômetro de 1min pra cada um meter."
+    },
+    "temperatureDelta": 10,
+    "tensionDelta": 9,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_a_lower_exposed_and_group_lower_exposed",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C49",
+    "number": 49,
+    "level": 5,
+    "category": "general",
+    "text": {
+      "ptBR": "A mostra um vídeo seu transando no celular para B e os demais assistirem."
+    },
+    "temperatureDelta": 9,
+    "tensionDelta": 9,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "requirements": {
+      "minPlayers": 4
+    }
+  },
+  {
+    "id": "C50",
+    "number": 50,
+    "level": 5,
+    "category": "explicit",
+    "text": {
+      "ptBR": "A chupa a berinjela de B usando um cubo de gelo na boca para intensificar a sensação."
+    },
+    "temperatureDelta": 10,
+    "tensionDelta": 6,
+    "weight": 1.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "requires_b_lower_exposed",
+    "requirements": {
+      "minPlayers": 4
+    }
   }
 ]
