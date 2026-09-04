@@ -48,6 +48,11 @@
     "clothingRequirement": "restores_a",
     "requirements": {
       "minPlayers": 4
+    },
+    "clothingEffect": {
+      "target": "A",
+      "action": "restore",
+      "slot": "any"
     }
   },
   {
@@ -99,6 +104,11 @@
     "clothingRequirement": "requires_b_feet",
     "requirements": {
       "minPlayers": 4
+    },
+    "clothingEffect": {
+      "target": "B",
+      "action": "remove",
+      "slot": "feet"
     }
   },
   {
@@ -218,6 +228,11 @@
     "clothingRequirement": "removes_a",
     "requirements": {
       "minPlayers": 4
+    },
+    "clothingEffect": {
+      "target": "A",
+      "action": "remove",
+      "slot": "any"
     }
   },
   {
@@ -303,6 +318,11 @@
     "clothingRequirement": "requires_b_lower_access",
     "requirements": {
       "minPlayers": 4
+    },
+    "clothingEffect": {
+      "target": "B",
+      "action": "open",
+      "slot": "bottom"
     }
   },
   {
@@ -456,6 +476,11 @@
     "clothingRequirement": "requires_b_torso_access",
     "requirements": {
       "minPlayers": 4
+    },
+    "clothingEffect": {
+      "target": "B",
+      "action": "remove",
+      "slot": "top"
     }
   },
   {
@@ -473,6 +498,11 @@
     "clothingRequirement": "removes_a",
     "requirements": {
       "minPlayers": 4
+    },
+    "clothingEffect": {
+      "target": "A",
+      "action": "remove",
+      "slot": "top"
     }
   },
   {
@@ -660,6 +690,11 @@
     "clothingRequirement": "requires_b_lower_access",
     "requirements": {
       "minPlayers": 4
+    },
+    "clothingEffect": {
+      "target": "B",
+      "action": "remove",
+      "slot": "bottom"
     }
   },
   {
