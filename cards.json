@@ -45,14 +45,9 @@
     "tensionDelta": -1,
     "weight": 0.55,
     "clothingDelta": 1,
-    "clothingRequirement": "restores_a",
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "clothingEffect": {
-      "target": "A",
-      "action": "restore",
-      "slot": "any"
     }
   },
   {
@@ -93,22 +88,17 @@
     "id": "C06",
     "number": 6,
     "level": 1,
-    "category": "clothing_other",
+    "category": "clothing_remove",
     "text": {
-      "ptBR": "A tira os sapatos e as meias de B usando apenas uma mão."
+      "ptBR": "A tira uma peça de roupa de B usando apenas uma mão."
     },
     "temperatureDelta": 1,
     "tensionDelta": 2,
-    "weight": 1.0,
-    "clothingDelta": 0,
-    "clothingRequirement": "requires_b_feet",
+    "weight": 2.8,
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "clothingEffect": {
-      "target": "B",
-      "action": "remove",
-      "slot": "feet"
     }
   },
   {
@@ -117,7 +107,7 @@
     "level": 1,
     "category": "general",
     "text": {
-      "ptBR": "A alimenta B colocando uma fruta ou petisco na boca dele."
+      "ptBR": "A dá um beijo em B."
     },
     "temperatureDelta": 1,
     "tensionDelta": 2,
@@ -132,9 +122,9 @@
     "id": "C08",
     "number": 8,
     "level": 1,
-    "category": "general",
+    "category": "drink",
     "text": {
-      "ptBR": "A passa a mão lentamente pelo cabelo de B."
+      "ptBR": "A define qual bebida B e todos bebem um shot."
     },
     "temperatureDelta": 1,
     "tensionDelta": 1,
@@ -223,16 +213,11 @@
     },
     "temperatureDelta": 4,
     "tensionDelta": 3,
-    "weight": 3.2,
+    "weight": 3.4,
     "clothingDelta": -1,
-    "clothingRequirement": "removes_a",
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "clothingEffect": {
-      "target": "A",
-      "action": "remove",
-      "slot": "any"
     }
   },
   {
@@ -275,7 +260,7 @@
     "level": 2,
     "category": "general",
     "text": {
-      "ptBR": "A dá uma mordida suave na orelha de B."
+      "ptBR": "A dá uma lambida suave na orelha de B."
     },
     "temperatureDelta": 3,
     "tensionDelta": 2,
@@ -292,7 +277,7 @@
     "level": 2,
     "category": "general",
     "text": {
-      "ptBR": "A apalpa o pêssego de B por cima da roupa por 10 segundos."
+      "ptBR": "A apalpa o bunda de B por cima da roupa por 10 segundos."
     },
     "temperatureDelta": 5,
     "tensionDelta": 3,
@@ -309,20 +294,15 @@
     "level": 2,
     "category": "clothing_other",
     "text": {
-      "ptBR": "A desabotoa a calça de B bem devagar."
+      "ptBR": "A mostra vários nudes para B e todos verem."
     },
     "temperatureDelta": 4,
     "tensionDelta": 4,
     "weight": 1.0,
     "clothingDelta": 0,
-    "clothingRequirement": "requires_b_lower_access",
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "clothingEffect": {
-      "target": "B",
-      "action": "open",
-      "slot": "bottom"
     }
   },
   {
@@ -331,7 +311,7 @@
     "level": 2,
     "category": "general",
     "text": {
-      "ptBR": "A passa uma pedra de gelo no peito de B usando os dedos."
+      "ptBR": "A mostra um vídeo íntimo para B e todos verem."
     },
     "temperatureDelta": 3,
     "tensionDelta": 2,
@@ -365,7 +345,7 @@
     "level": 3,
     "category": "general",
     "text": {
-      "ptBR": "A pega na berinjela de B."
+      "ptBR": "A pega na bolas de B."
     },
     "temperatureDelta": 6,
     "tensionDelta": 4,
@@ -450,7 +430,7 @@
     "level": 3,
     "category": "exposure",
     "text": {
-      "ptBR": "A mostra o próprio pêssego nu apenas para B ver."
+      "ptBR": "A mostra o próprio bunda nu apenas para B ver."
     },
     "temperatureDelta": 6,
     "tensionDelta": 5,
@@ -465,22 +445,17 @@
     "id": "C27",
     "number": 27,
     "level": 3,
-    "category": "clothing_other",
+    "category": "clothing_remove",
     "text": {
-      "ptBR": "A tira a camisa de B usando apenas os dentes."
+      "ptBR": "A tira uma peça de roupa de B usando apenas os dentes."
     },
     "temperatureDelta": 4,
     "tensionDelta": 4,
-    "weight": 1.0,
-    "clothingDelta": 0,
-    "clothingRequirement": "requires_b_torso_access",
+    "weight": 3.5,
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "clothingEffect": {
-      "target": "B",
-      "action": "remove",
-      "slot": "top"
     }
   },
   {
@@ -489,20 +464,15 @@
     "level": 3,
     "category": "clothing_remove",
     "text": {
-      "ptBR": "A tira a própria camisa e fica peito a peito com B por 1 minuto."
+      "ptBR": "A rebola para B por 30 segundos."
     },
     "temperatureDelta": 5,
     "tensionDelta": 3,
-    "weight": 1.8,
+    "weight": 3.5,
     "clothingDelta": -1,
-    "clothingRequirement": "removes_a",
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "clothingEffect": {
-      "target": "A",
-      "action": "remove",
-      "slot": "top"
     }
   },
   {
@@ -579,7 +549,7 @@
     "level": 4,
     "category": "explicit",
     "text": {
-      "ptBR": "A deixa B passar a mão no seu pêssego até os dedos chegarem no @ de A."
+      "ptBR": "A deixa B passar a mão no seu bunda até os dedos chegarem no @ de A."
     },
     "temperatureDelta": 8,
     "tensionDelta": 6,
@@ -596,7 +566,7 @@
     "level": 4,
     "category": "explicit",
     "text": {
-      "ptBR": "A apalpa o pêssego de B por 10 segundos por dentro da calça."
+      "ptBR": "A apalpa o bunda de B por 10 segundos por dentro da calça."
     },
     "temperatureDelta": 7,
     "tensionDelta": 4,
@@ -630,7 +600,7 @@
     "level": 4,
     "category": "exposure",
     "text": {
-      "ptBR": "A mostra uma parte da sua própria berinjela para B."
+      "ptBR": "A mostra uma parte da sua própria bolas para B."
     },
     "temperatureDelta": 7,
     "tensionDelta": 6,
@@ -664,7 +634,7 @@
     "level": 4,
     "category": "explicit",
     "text": {
-      "ptBR": "A mostra o próprio pêssego empinado e deixa B dar um beijo molhado nele."
+      "ptBR": "A mostra o próprio bunda empinado e deixa B dar um beijo molhado nele."
     },
     "temperatureDelta": 9,
     "tensionDelta": 6,
@@ -679,22 +649,17 @@
     "id": "C39",
     "number": 39,
     "level": 4,
-    "category": "clothing_other",
+    "category": "clothing_remove",
     "text": {
-      "ptBR": "A ajoelha na frente de B e tira a calça dele usando apenas a boca."
+      "ptBR": "A desce na frente de B até ficar de joelho provocando."
     },
     "temperatureDelta": 8,
     "tensionDelta": 5,
     "weight": 1.0,
-    "clothingDelta": 0,
-    "clothingRequirement": "requires_b_lower_access",
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
     "requirements": {
       "minPlayers": 4
-    },
-    "clothingEffect": {
-      "target": "B",
-      "action": "remove",
-      "slot": "bottom"
     }
   },
   {
@@ -720,7 +685,7 @@
     "level": 5,
     "category": "explicit",
     "text": {
-      "ptBR": "A mama a berinjela de B por 20seg."
+      "ptBR": "A mama a bolas de B por 20seg."
     },
     "temperatureDelta": 10,
     "tensionDelta": 6,
@@ -754,7 +719,7 @@
     "level": 5,
     "category": "explicit",
     "text": {
-      "ptBR": "A aguenta só a cabecinha da berinjela de B por 10seg."
+      "ptBR": "A deve dar para B."
     },
     "temperatureDelta": 10,
     "tensionDelta": 7,
@@ -771,7 +736,7 @@
     "level": 5,
     "category": "explicit",
     "text": {
-      "ptBR": "A fica de joelhos e dá um beijo molhado na berinjela de B e dos demais jogadores."
+      "ptBR": "A fica de joelhos e dá um beijo molhado na bolas de B e dos demais jogadores."
     },
     "temperatureDelta": 10,
     "tensionDelta": 7,
@@ -822,7 +787,7 @@
     "level": 5,
     "category": "explicit",
     "text": {
-      "ptBR": "A aguenta a cabecinha da berinjela de B e dos demais jogadores por 10seg cada."
+      "ptBR": "A aguenta a cabecinha da bolas de B e dos demais jogadores por 10seg cada."
     },
     "temperatureDelta": 10,
     "tensionDelta": 8,
@@ -873,7 +838,7 @@
     "level": 5,
     "category": "explicit",
     "text": {
-      "ptBR": "A chupa a berinjela de B usando um cubo de gelo na boca para intensificar a sensação."
+      "ptBR": "A chupa a bolas de B usando um cubo de gelo na boca para intensificar a sensação."
     },
     "temperatureDelta": 10,
     "tensionDelta": 6,
@@ -882,6 +847,127 @@
     "clothingRequirement": "requires_b_lower_exposed",
     "requirements": {
       "minPlayers": 4
+    }
+  },
+  {
+    "id": "C51",
+    "level": 1,
+    "category": "clothing_remove",
+    "weight": 3.0,
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A tira uma peça de roupa própria que B escolher."
+    }
+  },
+  {
+    "id": "C52",
+    "level": 1,
+    "category": "clothing_remove",
+    "weight": 2.8,
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A entrega uma peça de roupa própria para B guardar."
+    }
+  },
+  {
+    "id": "C53",
+    "level": 2,
+    "category": "clothing_remove",
+    "weight": 3.7,
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A tira uma peça de roupa própria e entrega para B."
+    }
+  },
+  {
+    "id": "C54",
+    "level": 2,
+    "category": "clothing_remove",
+    "weight": 3.5,
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "B escolhe uma peça de roupa de A para sair agora."
+    }
+  },
+  {
+    "id": "C55",
+    "level": 3,
+    "category": "clothing_remove",
+    "weight": 3.7,
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A tira mais uma peça de roupa própria escolhida por B."
+    }
+  },
+  {
+    "id": "C56",
+    "level": 3,
+    "category": "clothing_remove",
+    "weight": 3.5,
+    "clothingDelta": -1,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A entrega uma peça de roupa própria para B e continua a rodada."
+    }
+  },
+  {
+    "id": "C57",
+    "level": 1,
+    "category": "drink",
+    "weight": 2.4,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A bebe um shot da bebida que B escolher."
+    }
+  },
+  {
+    "id": "C58",
+    "level": 1,
+    "category": "drink",
+    "weight": 2.1,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A e B brindam; A bebe um shot."
+    }
+  },
+  {
+    "id": "C59",
+    "level": 2,
+    "category": "drink",
+    "weight": 2.2,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "B escolhe a bebida e A bebe um shot."
+    }
+  },
+  {
+    "id": "C60",
+    "level": 2,
+    "category": "drink",
+    "weight": 2.0,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A bebe um shot antes de continuar a rodada."
+    }
+  },
+  {
+    "id": "C61",
+    "level": 3,
+    "category": "drink",
+    "weight": 1.8,
+    "clothingDelta": 0,
+    "clothingRequirement": "none",
+    "text": {
+      "ptBR": "A brinda com B e bebe um shot."
     }
   }
 ]
